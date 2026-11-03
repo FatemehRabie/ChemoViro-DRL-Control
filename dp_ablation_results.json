@@ -1,0 +1,67 @@
+[
+  {
+    "grid_points_per_dim": 10,
+    "total_states": 10000,
+    "memory_mb": 4.81,
+    "vectorized_runtime_s": 0.44,
+    "serial_solve_ivp_est_s": 6161.5,
+    "test1_reward_mean": -1463056.2757210524,
+    "test1_reward_sd": 33904.02686319501,
+    "test1_burden_mean": 0.07233485607944148,
+    "test2_reward": -1442529.2858429074,
+    "test2_burden": 0.06913724097846342,
+    "test2_steps": 46
+  },
+  {
+    "grid_points_per_dim": 15,
+    "total_states": 50625,
+    "memory_mb": 24.33,
+    "vectorized_runtime_s": 2.57,
+    "serial_solve_ivp_est_s": 31192.6,
+    "test1_reward_mean": -1383049.9294564794,
+    "test1_reward_sd": 17931.808432563204,
+    "test1_burden_mean": 0.07013081666815704,
+    "test2_reward": -1359942.6702418197,
+    "test2_burden": 0.09910506759055049,
+    "test2_steps": 45
+  },
+  {
+    "grid_points_per_dim": 20,
+    "total_states": 160000,
+    "memory_mb": 76.9,
+    "vectorized_runtime_s": 9.52,
+    "serial_solve_ivp_est_s": 98584.0,
+    "test1_reward_mean": -1334707.7234052229,
+    "test1_reward_sd": 28962.648048263825,
+    "test1_burden_mean": 0.0943840218836252,
+    "test2_reward": -1319462.3343224037,
+    "test2_burden": 0.0911197126867702,
+    "test2_steps": 45
+  },
+  {
+    "grid_points_per_dim": 30,
+    "total_states": 810000,
+    "memory_mb": 389.33,
+    "vectorized_runtime_s": 69.9,
+    "serial_solve_ivp_est_s": 499081.5,
+    "test1_reward_mean": -1254009.4924972241,
+    "test1_reward_sd": 22083.30026090642,
+    "test1_burden_mean": 0.08065024601711841,
+    "test2_reward": -1237373.5368860562,
+    "test2_burden": 0.07789939127423262,
+    "test2_steps": 45
+  },
+  {
+    "grid_points_per_dim": 50,
+    "total_states": 6250000,
+    "memory_mb": 3004.07,
+    "vectorized_runtime_s": 881.09,
+    "serial_solve_ivp_est_s": 3850937.5,
+    "test1_reward_mean": -1219547.9654447874,
+    "test1_reward_sd": 23730.303706706454,
+    "test1_burden_mean": 0.07366120015709042,
+    "test2_reward": -1211746.4705371102,
+    "test2_burden": 0.07299471333854514,
+    "test2_steps": 45
+  }
+]
