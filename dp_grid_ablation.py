@@ -1,6 +1,8 @@
+import os
 import time
 import json
 import numpy as np
+import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
 from scipy.interpolate import interpn
 
@@ -124,7 +126,52 @@ def eval_dp(dp_tuple, weights=(1e-2, 1e-1), noise=False, seed=42):
             return total_r, tumor, step + 1
     return total_r, float(y[0] + y[1]), 400
 
+def plot_dp_ablation(results, out_png):
+    grids = [f"${r['grid_points_per_dim']}^4$" for r in results]
+    x = np.arange(len(results))
+    t1_mean = [r["test1_reward_mean"] / 1e6 for r in results]
+    t1_sd = [r["test1_reward_sd"] / 1e6 for r in results]
+    t2_val = [r["test2_reward"] / 1e6 for r in results]
+    vec_rt = [r["vectorized_runtime_s"] for r in results]
+    ser_rt = [r["serial_solve_ivp_est_s"] for r in results]
+    mem_mb = [r["memory_mb"] for r in results]
+
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4.6))
+    axes[0].errorbar(x, t1_mean, yerr=t1_sd, fmt='-o', capsize=4, linewidth=2.0, label="4D DP on Test 1 (Mean ± 1 SD, n=5)")
+    axes[0].plot(x, t2_val, '--s', linewidth=1.8, label="4D DP on Test 2 (No Noise)")
+    axes[0].axhline(-1.317, color='gray', linestyle=':', linewidth=1.6, label="Constant Half-Dose (-1.317e6)")
+    axes[0].axhline(-1.164, color='green', linestyle='-.', linewidth=1.6, label="Matched 2-Stage Open-Loop (-1.164e6)")
+    axes[0].set_xticks(x); axes[0].set_xticklabels(grids)
+    axes[0].set_xlabel("Grid Resolution ($N_g^4$)")
+    axes[0].set_ylabel("Cumulative Return ($\\times 10^6$)")
+    axes[0].set_title("(a) Policy Return vs. Grid Resolution")
+    axes[0].legend(fontsize=8.5, loc="lower right")
+    axes[0].grid(True, alpha=0.35)
+
+    axes[1].plot(x, vec_rt, '-o', linewidth=2.0, label="Vectorized 20-substep RK4 (s)")
+    axes[1].plot(x, ser_rt, '--^', linewidth=2.0, label="Est. Serial solve_ivp (s)")
+    axes[1].set_yscale("log")
+    axes[1].set_xticks(x); axes[1].set_xticklabels(grids)
+    axes[1].set_xlabel("Grid Resolution ($N_g^4$)")
+    axes[1].set_ylabel("Runtime (seconds, log scale)")
+    axes[1].set_title("(b) Computational Runtime Scaling")
+    axes[1].legend(fontsize=9, loc="upper left")
+    axes[1].grid(True, alpha=0.35)
+
+    axes[2].bar(x, mem_mb, width=0.55, color="#4c72b0", edgecolor="black")
+    axes[2].set_yscale("log")
+    axes[2].set_xticks(x); axes[2].set_xticklabels(grids)
+    axes[2].set_xlabel("Grid Resolution ($N_g^4$)")
+    axes[2].set_ylabel("Table Memory Footprint (MB, log scale)")
+    axes[2].set_title("(c) Memory Scaling ($O(N_g^4)$)")
+    axes[2].grid(True, alpha=0.35, axis="y")
+
+    plt.tight_layout()
+    plt.savefig(out_png, dpi=300)
+    plt.close()
+
 if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     results = []
     for n_g in [10, 15, 20, 30, 50]:
         print(f"Running DP for grid {n_g}^4 = {n_g**4} states...")
@@ -147,5 +194,9 @@ if __name__ == "__main__":
         }
         print(res)
         results.append(res)
-    with open(r"C:\Users\USER\.gemini\antigravity\brain\7ff53ad6-4cd2-4b51-a639-b826042b038e\scratch\dp_ablation_results.json", "w") as f:
+    out_json = os.path.join(base_dir, "dp_ablation_results.json")
+    with open(out_json, "w") as f:
         json.dump(results, f, indent=2)
+    out_png = os.path.join(base_dir, "dp_ablation.png")
+    plot_dp_ablation(results, out_png)
+    print("Saved DP ablation results and figure to", out_json, "and", out_png)

@@ -1,13 +1,16 @@
+import os
 import json
 import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-with open(r"C:\Users\USER\.gemini\antigravity\brain\7ff53ad6-4cd2-4b51-a639-b826042b038e\scratch\multiseed_results.json", "r") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, "multiseed_results.json"), "r") as f:
     data = json.load(f)
 
-with open(r"C:\Users\USER\.gemini\antigravity\brain\7ff53ad6-4cd2-4b51-a639-b826042b038e\scratch\dp_ablation_results.json", "r") as f:
+with open(os.path.join(BASE_DIR, "dp_ablation_results.json"), "r") as f:
     dp_data = json.load(f)
 
 rl_runs = data["rl_runs"]
@@ -155,10 +158,10 @@ for scen in scenarios:
             diff_pct = ((np.mean(v1) - np.mean(v2)) / abs(np.mean(v2))) * 100.0
             print(f"  {t[:6]} | {a1:4s} vs {a2:4s}: diff={diff_pct:+7.2f}%, U={u_stat:4.1f}, p={p_val:.4f}, r_rb={r_rb:+.2f}")
 
-with open(r"C:\Users\USER\.gemini\antigravity\brain\7ff53ad6-4cd2-4b51-a639-b826042b038e\scratch\statistical_summary.json", "w") as f:
+with open(os.path.join(BASE_DIR, "statistical_summary.json"), "w") as f:
     json.dump({"rl": summary, "baselines": base_summary, "dp": dp_data}, f, indent=2)
 
-# Plot Figure 2: Multi-seed learning curves with +/- 1 SD shaded confidence bands!
+# Plot Figure 3: Multi-seed learning curves with both +/- 1 SD dispersion bands and 95% t-CI bands!
 sns.set_style("whitegrid")
 plt.rcParams.update({
     'font.size': 12,
@@ -166,7 +169,7 @@ plt.rcParams.update({
     'axes.labelsize': 13,
     'xtick.labelsize': 11,
     'ytick.labelsize': 11,
-    'legend.fontsize': 11,
+    'legend.fontsize': 10,
 })
 
 fig, axes = plt.subplots(4, 1, figsize=(11, 16), sharex=True)
@@ -184,10 +187,15 @@ for ax, scen in zip(axes, scenarios):
             if len(ts) > 0:
                 interp_curves.append(np.interp(grid_t, ts, rw))
         interp_curves = np.array(interp_curves)
+        n_seeds = interp_curves.shape[0]
         mean_c = np.mean(interp_curves, axis=0)
         sd_c = np.std(interp_curves, axis=0, ddof=1)
+        ci95_c = stats.t.ppf(0.975, df=n_seeds - 1) * sd_c / np.sqrt(n_seeds)
         ax.plot(grid_t, mean_c, label=f"{algo} (mean)", color=colors[algo], linewidth=2.0)
-        ax.fill_between(grid_t, mean_c - sd_c, mean_c + sd_c, color=colors[algo], alpha=0.22, label=f"{algo} (±1 SD)")
+        ax.fill_between(grid_t, mean_c - sd_c, mean_c + sd_c, color=colors[algo], alpha=0.24, label=f"{algo} (±1 SD)")
+        ax.fill_between(grid_t, mean_c - ci95_c, mean_c + ci95_c, color=colors[algo], alpha=0.10)
+        ax.plot(grid_t, mean_c - ci95_c, color=colors[algo], linestyle="--", linewidth=0.8, alpha=0.55)
+        ax.plot(grid_t, mean_c + ci95_c, color=colors[algo], linestyle="--", linewidth=0.8, alpha=0.55, label=f"{algo} (95% CI)")
     ax.set_title(f"Training Progress: {scen} (n = 5 independent seeds)")
     ax.set_ylabel("Mean Episode Return")
     ax.legend(ncol=4, loc="lower right", frameon=True)
@@ -195,7 +203,12 @@ for ax, scen in zip(axes, scenarios):
 
 axes[-1].set_xlabel("Training Timesteps")
 plt.tight_layout()
-plt.savefig(r"c:\Users\USER\Desktop\Article 2 ODE\ODE Article - Revise\output.png", dpi=300)
-plt.savefig(r"c:\Users\USER\Desktop\Article 2 ODE\ODE Article - Revise\ChemoViro-DRL-Control\training_rewards_multiseed.png", dpi=300)
+out_png_repo = os.path.join(BASE_DIR, "output.png")
+out_png_multiseed = os.path.join(BASE_DIR, "training_rewards_multiseed.png")
+plt.savefig(out_png_repo, dpi=300)
+plt.savefig(out_png_multiseed, dpi=300)
+parent_out_png = os.path.join(os.path.dirname(BASE_DIR), "output.png")
+if os.path.isdir(os.path.dirname(BASE_DIR)):
+    plt.savefig(parent_out_png, dpi=300)
 plt.close()
-print("Saved multi-seed Figure 2 (output.png) with confidence bands!")
+print("Saved multi-seed Figure 3 (output.png) with ±1 SD dispersion bands and 95% CI boundaries!")

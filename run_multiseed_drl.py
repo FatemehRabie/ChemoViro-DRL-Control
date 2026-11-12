@@ -521,7 +521,7 @@ if __name__ == "__main__":
                 "param_unc_burden_mean": float(np.mean(param_burdens))
             })
 
-    out_path = r"C:\Users\USER\.gemini\antigravity\brain\7ff53ad6-4cd2-4b51-a639-b826042b038e\scratch\multiseed_results.json"
+    out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "multiseed_results.json")
     with open(out_path, "w") as f:
         json.dump({"rl_runs": all_out, "baselines": baseline_out}, f, indent=2)
     print("Saved results to", out_path)
