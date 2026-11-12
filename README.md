@@ -4,7 +4,7 @@ This repository contains the source code, multi-seed experimental suite, Dynamic
 **"Optimal Control of a Virotherapy-Chemotherapy Combination Model via Deep Reinforcement Learning: A Comprehensive Framework"** (*Computer Methods and Programs in Biomedicine*).
 
 ## Overview
-This project benchmarks four continuous-action actor-critic Deep Reinforcement Learning (DRL) algorithms—**TRPO**, **PPO**, **TD3**, and **SAC**—against classical Dynamic Programming (DP) and matched open-loop dosing schedules on the nonlinear 4D (reduced, immune-excluded) and 6D (full, immune-active) chemo-virotherapy ordinary differential equation (ODE) models of Malinzi et al. (2017).
+This project benchmarks four continuous-action actor-critic Deep Reinforcement Learning (DRL) algorithms—**TRPO**, **PPO**, **TD3**, and **SAC**—against classical Dynamic Programming (DP) and matched open-loop dosing schedules on the nonlinear 4D (reduced, immune-excluded) and 6D (full, immune-active) chemo-virotherapy ordinary differential equation (ODE) models of Malinzi et al. (2018).
 
 ## Repository Contents
 * `ODE-RL-Control.ipynb`: Interactive Jupyter Notebook containing the custom Gymnasium environment, Optuna hyperparameter search, agent training, and trajectory visualizations.
@@ -36,6 +36,9 @@ python run_baselines_and_dp_ablation.py
 # 2. Run 4D Dynamic Programming grid resolution ablation (10^4 to 50^4 states)
 python dp_grid_ablation.py
 
-# 3. Run 5-seed DRL training and statistical evaluation across Models 1-4 and Tests 1-4
+# 3. Run 5-seed DRL training and evaluation across Models 1-4 and Tests 1-4
 python run_multiseed_drl.py
+
+# 4. Run statistical post-processing (Mann-Whitney U, 95% CIs) and generate learning-curve plots
+python analyze_and_plot.py
 ```

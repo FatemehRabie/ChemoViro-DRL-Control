@@ -127,8 +127,8 @@ def eval_dp(dp_tuple, weights=(1e-2, 1e-1), noise=False, seed=42):
     return total_r, float(y[0] + y[1]), 400
 
 def plot_dp_ablation(results, out_png):
+    x = np.array([r["grid_points_per_dim"] for r in results], dtype=float)
     grids = [f"${r['grid_points_per_dim']}^4$" for r in results]
-    x = np.arange(len(results))
     t1_mean = [r["test1_reward_mean"] / 1e6 for r in results]
     t1_sd = [r["test1_reward_sd"] / 1e6 for r in results]
     t2_val = [r["test2_reward"] / 1e6 for r in results]
@@ -136,35 +136,39 @@ def plot_dp_ablation(results, out_png):
     ser_rt = [r["serial_solve_ivp_est_s"] for r in results]
     mem_mb = [r["memory_mb"] for r in results]
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.6))
-    axes[0].errorbar(x, t1_mean, yerr=t1_sd, fmt='-o', capsize=4, linewidth=2.0, label="4D DP on Test 1 (Mean ± 1 SD, n=5)")
-    axes[0].plot(x, t2_val, '--s', linewidth=1.8, label="4D DP on Test 2 (No Noise)")
-    axes[0].axhline(-1.317, color='gray', linestyle=':', linewidth=1.6, label="Constant Half-Dose (-1.317e6)")
-    axes[0].axhline(-1.164, color='green', linestyle='-.', linewidth=1.6, label="Matched 2-Stage Open-Loop (-1.164e6)")
+    fig, axes = plt.subplots(1, 3, figsize=(15.5, 4.6))
+    axes[0].plot(x, t2_val, '--s', color='tab:orange', markersize=6.5, linewidth=2.0, label="DP on Test 2 (No Noise)")
+    axes[0].axhline(-1.3167, color='tab:green', linestyle=':', linewidth=1.8, label="Constant Half-Dose (-1.32M)")
+    axes[0].axhline(-1.1637, color='tab:red', linestyle='-.', linewidth=1.8, label="Matched 2-Stage Open-Loop (-1.16M)")
+    axes[0].errorbar(x, t1_mean, yerr=t1_sd, fmt='-o', color='tab:blue', markersize=6.5, capsize=4, linewidth=2.0, label="DP on Test 1 (Noise, Mean ± 1 SD)")
     axes[0].set_xticks(x); axes[0].set_xticklabels(grids)
-    axes[0].set_xlabel("Grid Resolution ($N_g^4$)")
-    axes[0].set_ylabel("Cumulative Return ($\\times 10^6$)")
-    axes[0].set_title("(a) Policy Return vs. Grid Resolution")
+    axes[0].set_xlabel("Total Discretized Grid States ($N_g^4$)", fontsize=10.5)
+    axes[0].set_ylabel("Cumulative Reward ($\\times 10^6$)", fontsize=10.5)
+    axes[0].set_title("(a) Policy Return vs. Grid Resolution", fontweight="bold", fontsize=11.5)
     axes[0].legend(fontsize=8.5, loc="lower right")
-    axes[0].grid(True, alpha=0.35)
+    axes[0].grid(True, linestyle='--', alpha=0.45)
 
-    axes[1].plot(x, vec_rt, '-o', linewidth=2.0, label="Vectorized 20-substep RK4 (s)")
-    axes[1].plot(x, ser_rt, '--^', linewidth=2.0, label="Est. Serial solve_ivp (s)")
+    axes[1].plot(x, vec_rt, '-o', color='tab:purple', markersize=6.5, linewidth=2.0, label="Vectorized 25-substep RK4 Sweep (Actual, s)")
+    axes[1].plot(x, ser_rt, '--^', color='tab:brown', markersize=6.5, linewidth=2.0, label="Serial SciPy solve_ivp (Est., s)")
     axes[1].set_yscale("log")
     axes[1].set_xticks(x); axes[1].set_xticklabels(grids)
-    axes[1].set_xlabel("Grid Resolution ($N_g^4$)")
-    axes[1].set_ylabel("Runtime (seconds, log scale)")
-    axes[1].set_title("(b) Computational Runtime Scaling")
-    axes[1].legend(fontsize=9, loc="upper left")
-    axes[1].grid(True, alpha=0.35)
+    axes[1].set_xlabel("Total Discretized Grid States ($N_g^4$)", fontsize=10.5)
+    axes[1].set_ylabel("Computation Time (seconds, log scale)", fontsize=10.5)
+    axes[1].set_title("(b) Computational Time Scaling ($O(N_g^4)$)", fontweight="bold", fontsize=11.5)
+    axes[1].legend(fontsize=8.5, loc="upper left")
+    axes[1].grid(True, which="both", linestyle='--', alpha=0.35)
 
-    axes[2].bar(x, mem_mb, width=0.55, color="#4c72b0", edgecolor="black")
+    axes[2].plot(x, mem_mb, '-d', color='tab:pink', markersize=7.5, linewidth=2.0, label="4D Value + Policy Tables (MB)")
+    for xi, mi in zip(x, mem_mb):
+        axes[2].annotate(f"{mi:.1f} MB", (xi, mi), textcoords="offset points", xytext=(0, 7), ha="center", fontsize=8.5)
     axes[2].set_yscale("log")
+    axes[2].set_ylim(1.0, 1e4)
     axes[2].set_xticks(x); axes[2].set_xticklabels(grids)
-    axes[2].set_xlabel("Grid Resolution ($N_g^4$)")
-    axes[2].set_ylabel("Table Memory Footprint (MB, log scale)")
-    axes[2].set_title("(c) Memory Scaling ($O(N_g^4)$)")
-    axes[2].grid(True, alpha=0.35, axis="y")
+    axes[2].set_xlabel("Total Discretized Grid States ($N_g^4$)", fontsize=10.5)
+    axes[2].set_ylabel("Memory Footprint (MB, log scale)", fontsize=10.5)
+    axes[2].set_title("(c) Memory Scaling Across $N_g^4$ States", fontweight="bold", fontsize=11.5)
+    axes[2].legend(fontsize=8.5, loc="upper left")
+    axes[2].grid(True, which="both", linestyle='--', alpha=0.35)
 
     plt.tight_layout()
     plt.savefig(out_png, dpi=300)

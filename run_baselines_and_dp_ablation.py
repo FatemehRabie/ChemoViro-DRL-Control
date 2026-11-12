@@ -84,25 +84,39 @@ def eval_schedule(schedule_fn, model_type, params, weights, seed=None, noise=Fal
             return total_r, tumor, step + 1
     return total_r, float(y[0] + y[1]), max_steps
 
-# 1. Grid-search matched open-loop constant and piecewise-constant policies on Reduced Default (No Noise)
-for w_label, weights in [("High-Penalty (A1=1e-2, A2=1e-1)", (1e-2, 1e-1)), ("Low-Penalty (A1=1e-7, A2=1e-5)", (1e-7, 1e-5))]:
-    print(f"\n==================== {w_label} ====================")
-    best_r, best_u = -np.inf, None
-    for u1 in np.linspace(0, 1000, 21):
-        for u2 in np.linspace(0, 100, 21):
-            r, tf_b, st = eval_schedule(lambda t, o: (u1, u2), 'reduced', CONFIG_PARAMS['default'], weights, noise=False)
-            if r > best_r:
-                best_r, best_u = r, (u1, u2)
-    print(f"Best constant open-loop on Default 4D: u*={best_u}, R={best_r:.4e}")
+if __name__ == "__main__":
+    # 1. Grid-search matched open-loop constant and piecewise-constant policies on Reduced Default (No Noise)
+    for w_label, weights in [("High-Penalty Regime A (A1=1e-2, A2=1e-1)", (1e-2, 1e-1)), ("Low-Penalty Regime B (A1=1e-7, A2=1e-5)", (1e-7, 1e-5))]:
+        print(f"\n==================== {w_label} ====================")
+        best_r, best_u = -np.inf, None
+        for u1 in np.linspace(0, 1000, 21):
+            for u2 in np.linspace(0, 100, 21):
+                r, tf_b, st = eval_schedule(lambda t, o: (u1, u2), 'reduced', CONFIG_PARAMS['default'], weights, noise=False)
+                if r > best_r:
+                    best_r, best_u = r, (u1, u2)
+        print(f"Best constant open-loop on Default 4D: u*={best_u}, R={best_r:.4e}")
 
-    # Two-stage piecewise constant search: stage 1 for t < t_sw, stage 2 for t >= t_sw
-    best_pw_r, best_pw = -np.inf, None
-    for t_sw in [5, 10, 15, 20, 25, 30, 35]:
-        for u1_a in [0, 250, 500, 750, 1000]:
-            for u2_a in [0, 25, 50, 75, 100]:
-                for u1_b in [0, 100, 250, 500, 1000]:
-                    for u2_b in [0, 25, 50, 100]:
-                        r, tf_b, st = eval_schedule(lambda t, o: (u1_a, u2_a) if t < t_sw else (u1_b, u2_b), 'reduced', CONFIG_PARAMS['default'], weights, noise=False)
-                        if r > best_pw_r:
-                            best_pw_r, best_pw = r, (t_sw, u1_a, u2_a, u1_b, u2_b)
-    print(f"Best 2-stage open-loop on Default 4D: params={best_pw}, R={best_pw_r:.4e}")
+        # Two-stage piecewise constant search: stage 1 for t < t_sw, stage 2 for t >= t_sw
+        best_pw_r, best_pw = -np.inf, None
+        for t_sw in [5, 10, 15, 20, 25, 30, 35]:
+            for u1_a in [0, 250, 500, 750, 1000]:
+                for u2_a in [0, 25, 50, 75, 100]:
+                    for u1_b in [0, 100, 250, 500, 1000]:
+                        for u2_b in [0, 25, 50, 100]:
+                            r, tf_b, st = eval_schedule(lambda t, o: (u1_a, u2_a) if t < t_sw else (u1_b, u2_b), 'reduced', CONFIG_PARAMS['default'], weights, noise=False)
+                            if r > best_pw_r:
+                                best_pw_r, best_pw = r, (t_sw, u1_a, u2_a, u1_b, u2_b)
+        print(f"Best 2-stage open-loop on Default 4D: params={best_pw}, R={best_pw_r:.4e}")
+
+    # 2. Explicit Table 6 reference summary across Regime A (Test 2) and Regime B (Test 2)
+    print("\n==================== Table 6 Deterministic (Test 2) Summary ====================")
+    schedules = [
+        ("Malinzi Half-Dose (500, 50)", lambda t, o: (500.0, 50.0)),
+        ("Matched Constant (600, 100) [Regime A Grid-Opt.]", lambda t, o: (600.0, 100.0)),
+        ("Full-Dose Constant (1000, 100) [Regime B Grid-Opt.]", lambda t, o: (1000.0, 100.0)),
+        ("Two-Stage (1000, 100)->(0, 100) at t_sw=10 d", lambda t, o: (1000.0, 100.0) if t < 10 else (0.0, 100.0)),
+    ]
+    for name, fn in schedules:
+        ra, ba, sa = eval_schedule(fn, 'reduced', CONFIG_PARAMS['default'], (1e-2, 1e-1), noise=False)
+        rb, bb, sb = eval_schedule(fn, 'reduced', CONFIG_PARAMS['default'], (1e-7, 1e-5), noise=False)
+        print(f"{name:52s} | RegA T2={ra:12.2f} (burd={ba:.3f}, {sa}d) | RegB T2={rb:12.2f}")
