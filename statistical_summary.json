@@ -25,7 +25,7 @@
             "rel_imp_sd": 0.15701908865108508,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -45,9 +45,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.991209085887846,
             "rel_imp_sd": 0.009855343121500104,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007290358091535638,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -69,7 +69,7 @@
             "rel_imp_sd": 0.017245387647525475,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -91,7 +91,7 @@
             "rel_imp_sd": 0.5506602387993271,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -125,7 +125,7 @@
             "rel_imp_sd": 0.15985037324747686,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -145,9 +145,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.99483561563498,
             "rel_imp_sd": 0.008390764250178293,
-            "mwu_u": 0.0,
-            "mwu_p": 0.006694381442043654,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -169,7 +169,7 @@
             "rel_imp_sd": 0.017256354787934986,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -191,7 +191,7 @@
             "rel_imp_sd": 0.5523347737149207,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -225,7 +225,7 @@
             "rel_imp_sd": 8.794607699355833,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -245,9 +245,9 @@
             "steps": 45.2,
             "rel_imp_mean": -10.690957492508533,
             "rel_imp_sd": 8.599973065430884,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -269,7 +269,7 @@
             "rel_imp_sd": 93.04835090136788,
             "mwu_u": 10.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": 0.19999999999999996
+            "r_rb": -0.19999999999999996
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -291,7 +291,7 @@
             "rel_imp_sd": 37.59673187214944,
             "mwu_u": 20.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": -0.6000000000000001
+            "r_rb": 0.6000000000000001
           }
         },
         "param_unc": {
@@ -325,7 +325,7 @@
             "rel_imp_sd": 10.670989520778523,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -345,9 +345,9 @@
             "steps": 45.2,
             "rel_imp_mean": -6.5921140243157454,
             "rel_imp_sd": 10.696849434167142,
-            "mwu_u": 5.0,
-            "mwu_p": 0.11879749752684605,
-            "r_rb": 0.6
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -369,7 +369,7 @@
             "rel_imp_sd": 122.22389063503272,
             "mwu_u": 15.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": -0.19999999999999996
+            "r_rb": 0.19999999999999996
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -391,7 +391,7 @@
             "rel_imp_sd": 42.6468362926778,
             "mwu_u": 20.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": -0.6000000000000001
+            "r_rb": 0.6000000000000001
           }
         },
         "param_unc": {
@@ -427,7 +427,7 @@
             "rel_imp_sd": 0.1637387089569252,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -447,9 +447,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.99774461786257,
             "rel_imp_sd": 0.0003486665041069569,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -471,7 +471,7 @@
             "rel_imp_sd": 0.017237669772979018,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -493,7 +493,7 @@
             "rel_imp_sd": 0.5514738817307957,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -527,7 +527,7 @@
             "rel_imp_sd": 0.15872398047358305,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -547,9 +547,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.974720213232297,
             "rel_imp_sd": 0.018222971794026835,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -571,7 +571,7 @@
             "rel_imp_sd": 0.01729810480979958,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -593,7 +593,7 @@
             "rel_imp_sd": 0.5526381217120697,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -627,7 +627,7 @@
             "rel_imp_sd": 2.5519233812836037,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -647,9 +647,9 @@
             "steps": 44.2,
             "rel_imp_mean": -5.293069535718401,
             "rel_imp_sd": 2.457893258437262,
-            "mwu_u": 0.0,
-            "mwu_p": 0.006694381442043654,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -671,7 +671,7 @@
             "rel_imp_sd": 150.92641870147952,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -693,7 +693,7 @@
             "rel_imp_sd": 38.034080980673174,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           }
         },
         "param_unc": {
@@ -727,7 +727,7 @@
             "rel_imp_sd": 2.513064536328514,
             "mwu_u": 3.0,
             "mwu_p": 0.05555555555555555,
-            "r_rb": 0.76
+            "r_rb": -0.76
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -747,9 +747,9 @@
             "steps": 44.4,
             "rel_imp_mean": -5.444049941213626,
             "rel_imp_sd": 2.548566249388222,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007088720793989425,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -771,7 +771,7 @@
             "rel_imp_sd": 186.08736954675507,
             "mwu_u": 10.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": 0.19999999999999996
+            "r_rb": -0.19999999999999996
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -793,7 +793,7 @@
             "rel_imp_sd": 47.53490940987037,
             "mwu_u": 10.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": 0.19999999999999996
+            "r_rb": -0.19999999999999996
           }
         },
         "param_unc": {
@@ -829,7 +829,7 @@
             "rel_imp_sd": 0.1635503995847475,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -849,9 +849,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.997795521288527,
             "rel_imp_sd": 0.0005986704322057696,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -873,7 +873,7 @@
             "rel_imp_sd": 0.017237404688515052,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -895,7 +895,7 @@
             "rel_imp_sd": 0.5515273474965493,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -929,7 +929,7 @@
             "rel_imp_sd": 0.19264143857410268,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -949,9 +949,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.917033148632845,
             "rel_imp_sd": 0.056151275747642414,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -973,7 +973,7 @@
             "rel_imp_sd": 0.019462876095089073,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -995,7 +995,7 @@
             "rel_imp_sd": 0.5521224321901362,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -1029,7 +1029,7 @@
             "rel_imp_sd": 9.183554986138935,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1049,9 +1049,9 @@
             "steps": 45.4,
             "rel_imp_mean": -15.415129856647976,
             "rel_imp_sd": 9.31135119396782,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007290358091535638,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1073,7 +1073,7 @@
             "rel_imp_sd": 92.39936528931783,
             "mwu_u": 15.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": -0.19999999999999996
+            "r_rb": 0.19999999999999996
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1095,7 +1095,7 @@
             "rel_imp_sd": 45.89903508842512,
             "mwu_u": 15.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": -0.19999999999999996
+            "r_rb": 0.19999999999999996
           }
         },
         "param_unc": {
@@ -1129,7 +1129,7 @@
             "rel_imp_sd": 7.070847359287839,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1149,9 +1149,9 @@
             "steps": 44.6,
             "rel_imp_mean": -5.437358852757072,
             "rel_imp_sd": 7.183701798139363,
-            "mwu_u": 5.0,
-            "mwu_p": 0.11879749752684605,
-            "r_rb": 0.6
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1173,7 +1173,7 @@
             "rel_imp_sd": 143.78421233177832,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1195,7 +1195,7 @@
             "rel_imp_sd": 47.122122555968595,
             "mwu_u": 10.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": 0.19999999999999996
+            "r_rb": -0.19999999999999996
           }
         },
         "param_unc": {
@@ -1231,7 +1231,7 @@
             "rel_imp_sd": 0.17009667899958228,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1251,9 +1251,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.988013227499613,
             "rel_imp_sd": 0.013014017818861768,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1275,7 +1275,7 @@
             "rel_imp_sd": 0.017427307753524413,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1297,7 +1297,7 @@
             "rel_imp_sd": 0.551376392455212,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -1331,7 +1331,7 @@
             "rel_imp_sd": 0.14951817478729215,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1351,9 +1351,9 @@
             "steps": 46.0,
             "rel_imp_mean": -13.891314279460474,
             "rel_imp_sd": 0.05718090234226954,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007494957516935239,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1375,7 +1375,7 @@
             "rel_imp_sd": 0.020033865491190822,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1397,7 +1397,7 @@
             "rel_imp_sd": 0.5478658407993732,
             "mwu_u": 25.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": -1.0
+            "r_rb": 1.0
           }
         },
         "param_unc": {
@@ -1431,7 +1431,7 @@
             "rel_imp_sd": 9.183554986138935,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1451,9 +1451,9 @@
             "steps": 45.4,
             "rel_imp_mean": -15.415129856647976,
             "rel_imp_sd": 9.31135119396782,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007290358091535638,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1475,7 +1475,7 @@
             "rel_imp_sd": 92.39936528931783,
             "mwu_u": 15.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": -0.19999999999999996
+            "r_rb": 0.19999999999999996
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1497,7 +1497,7 @@
             "rel_imp_sd": 45.89903508842512,
             "mwu_u": 15.0,
             "mwu_p": 0.6904761904761905,
-            "r_rb": -0.19999999999999996
+            "r_rb": 0.19999999999999996
           }
         },
         "param_unc": {
@@ -1531,7 +1531,7 @@
             "rel_imp_sd": 7.333082820853918,
             "mwu_u": 2.0,
             "mwu_p": 0.031746031746031744,
-            "r_rb": 0.84
+            "r_rb": -0.84
           },
           "Test 2 (Reduced, Default, No Noise)": {
             "vals": [
@@ -1551,9 +1551,9 @@
             "steps": 44.4,
             "rel_imp_mean": -6.932523359244686,
             "rel_imp_sd": 7.306217422547644,
-            "mwu_u": 0.0,
-            "mwu_p": 0.007290358091535638,
-            "r_rb": 1.0
+            "mwu_u": null,
+            "mwu_p": null,
+            "r_rb": null
           },
           "Test 3 (Full, Modified, Noise)": {
             "vals": [
@@ -1575,7 +1575,7 @@
             "rel_imp_sd": 83.13481289256835,
             "mwu_u": 0.0,
             "mwu_p": 0.007936507936507936,
-            "r_rb": 1.0
+            "r_rb": -1.0
           },
           "Test 4 (Full, Modified, Zero-Lysis Control)": {
             "vals": [
@@ -1597,7 +1597,7 @@
             "rel_imp_sd": 38.43630577323682,
             "mwu_u": 5.0,
             "mwu_p": 0.15079365079365079,
-            "r_rb": 0.6
+            "r_rb": -0.6
           }
         },
         "param_unc": {
