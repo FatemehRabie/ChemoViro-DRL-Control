@@ -1,0 +1,42 @@
+{
+ "agent_vs_half_dose": {
+  "comparisons": 48,
+  "mann_whitney_p_below_0.05": 47,
+  "paired_wilcoxon_p_below_0.05": 0,
+  "all_five_paired_differences_same_sign": 47,
+  "min_attainable_mann_whitney_p_n5": 0.007936507936507936,
+  "min_attainable_paired_p_n5": 0.0625,
+  "median_corr_ppo_trpo_vs_baseline": 0.9741431020193196,
+  "mann_whitney_rejection_rate_with_no_true_difference": {
+   "independent": 0.031905,
+   "corr_0.9": 0.00032,
+   "corr_0.999": 0.0
+  }
+ },
+ "holm": {
+  "cells": 12,
+  "cells_with_more_than_one_holm_significant_pair": 6
+ },
+ "between_seed_sd_test1": [
+  [
+   "Model 1 (Full, Default, Noise)",
+   "1.35e+04",
+   "1.31e+04"
+  ],
+  [
+   "Model 2 (Reduced, Default, Noise)",
+   "1.44e+04",
+   "8.09e+03"
+  ],
+  [
+   "Model 3 (Reduced, Modified, Noise)",
+   "2.57e+04",
+   "5.3e+04"
+  ],
+  [
+   "Model 4 (Reduced, Modified, No Noise)",
+   "9.98e+03",
+   "6.77e+03"
+  ]
+ ]
+}

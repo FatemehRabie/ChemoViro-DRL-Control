@@ -1,0 +1,3662 @@
+{
+ "replica_max_rel_diff": 0.0,
+ "constants": {
+  "no dosing (0, 0)": {
+   "Test 1 (Reduced, Default, Noise)": {
+    "42": -1490345.2545060492,
+    "123": -1486774.272911983,
+    "456": -1514490.2967453047,
+    "789": -1498202.3667268844,
+    "1024": -1514311.6804815994
+   },
+   "Test 2 (Reduced, Default, No Noise)": {
+    "42": -1503322.909504544,
+    "123": -1503322.909504544,
+    "456": -1503322.909504544,
+    "789": -1503322.909504544,
+    "1024": -1503322.909504544
+   },
+   "Test 3 (Full, Modified, Noise)": {
+    "42": -5.444758812846296,
+    "123": -6.355800821667544,
+    "456": -6.2168627595987145,
+    "789": -5.265529671368819,
+    "1024": -5.950544031238069
+   },
+   "Test 4 (Full, Modified, Zero-Lysis Control)": {
+    "42": -79693.16601110117,
+    "123": -77277.93628827529,
+    "456": -83246.0782186008,
+    "789": -81717.49977233735,
+    "1024": -83378.14605398093
+   }
+  },
+  "virus only (1000, 0)": {
+   "Test 1 (Reduced, Default, Noise)": {
+    "42": -1393027.603133801,
+    "123": -1386342.924183687,
+    "456": -1408786.5196315004,
+    "789": -1399795.939069331,
+    "1024": -1409760.4729378927
+   },
+   "Test 2 (Reduced, Default, No Noise)": {
+    "42": -1400399.3088462667,
+    "123": -1400399.3088462667,
+    "456": -1400399.3088462667,
+    "789": -1400399.3088462667,
+    "1024": -1400399.3088462667
+   },
+   "Test 3 (Full, Modified, Noise)": {
+    "42": -10005.23800822868,
+    "123": -10006.116003318326,
+    "456": -10005.983487492604,
+    "789": -10005.065489376586,
+    "1024": -10005.725542061666
+   },
+   "Test 4 (Full, Modified, Zero-Lysis Control)": {
+    "42": -178721.75188118088,
+    "123": -175897.42807207303,
+    "456": -182478.50027711247,
+    "789": -181130.66397367264,
+    "1024": -182604.156703007
+   }
+  },
+  "drug only (0, 100)": {
+   "Test 1 (Reduced, Default, Noise)": {
+    "42": -1398694.6898817455,
+    "123": -1395361.1318515604,
+    "456": -1420582.4587464014,
+    "789": -1405802.9917542194,
+    "1024": -1420538.125881005
+   },
+   "Test 2 (Reduced, Default, No Noise)": {
+    "42": -1410354.35750149,
+    "123": -1410354.35750149,
+    "456": -1410354.35750149,
+    "789": -1410354.35750149,
+    "1024": -1410354.35750149
+   },
+   "Test 3 (Full, Modified, Noise)": {
+    "42": -1005.4445950515881,
+    "123": -1006.3556096059481,
+    "456": -1006.2166756966741,
+    "789": -1005.2653712967051,
+    "1024": -1005.9503650312438
+   },
+   "Test 4 (Full, Modified, Zero-Lysis Control)": {
+    "42": -90132.50848456954,
+    "123": -87717.60790392087,
+    "456": -93734.92045735076,
+    "789": -92156.56156242358,
+    "1024": -93866.97099715612
+   }
+  },
+  "full dose (1000, 100)": {
+   "Test 1 (Reduced, Default, Noise)": {
+    "42": -1323451.887591935,
+    "123": -1316219.679356868,
+    "456": -1338737.6562758195,
+    "789": -1330633.0649101962,
+    "1024": -1338175.297809068
+   },
+   "Test 2 (Reduced, Default, No Noise)": {
+    "42": -1331054.7837294457,
+    "123": -1331054.7837294457,
+    "456": -1331054.7837294457,
+    "789": -1331054.7837294457,
+    "1024": -1331054.7837294457
+   },
+   "Test 3 (Full, Modified, Noise)": {
+    "42": -11005.237850369067,
+    "123": -11006.115818914632,
+    "456": -11005.983307068578,
+    "789": -11005.065336710026,
+    "1024": -11005.72536945066
+   },
+   "Test 4 (Full, Modified, Zero-Lysis Control)": {
+    "42": -189011.5923281996,
+    "123": -186137.5870601125,
+    "456": -192817.875848316,
+    "789": -191470.2375347326,
+    "1024": -192943.51535160345
+   }
+  }
+ },
+ "per_run": [
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "PPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1490345.2545060492,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.444758812846296,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79693.16601110117,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "PPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1486774.272911983,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.355800821667544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77277.93628827529,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "PPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1514490.2967453047,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.2168627595987145,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83246.0782186008,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "PPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1498202.3667268844,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.265529671368819,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81717.49977233735,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "PPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1514311.6804815994,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.950544031238069,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83378.14605398093,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1479034.4965613806,
+     "rel_diff_to_no_dosing": 0.007647392924887903,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.007647392924887903,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1491891.9900512006,
+     "rel_diff_to_no_dosing": 0.007662028839601904,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.007662028839601904,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.444758812846296,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79809.90119396754,
+     "rel_diff_to_no_dosing": 0.0014626654227106134,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0014626654227106134,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.007662028839601904
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1391426.8990645944,
+     "rel_diff_to_no_dosing": 0.06852488902685956,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.002827480760657181,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1407169.3880805483,
+     "rel_diff_to_no_dosing": 0.0683311634252889,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0022633873703621723,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.355800821667544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77277.93666919468,
+     "rel_diff_to_no_dosing": 4.929212710622544e-09,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 4.929212710622544e-09,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.06852488902685956
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1480421.0138229397,
+     "rel_diff_to_no_dosing": 0.023013239209829086,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.023013239209829086,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1470156.8744681107,
+     "rel_diff_to_no_dosing": 0.022559521104462014,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.022559521104462014,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.2168627595987145,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83246.0782186008,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.023013239209829086
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1498202.3667268844,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.265529671368819,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81717.49977233735,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1514311.6804815994,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.950544031238069,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83378.14605398093,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TD3",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1490345.2545060492,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.909504544,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.444758812846296,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79693.16601110117,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 0.0
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TD3",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1486774.2717934474,
+     "rel_diff_to_no_dosing": 7.523237809540294e-10,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 7.523237809540294e-10,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.9083458376,
+     "rel_diff_to_no_dosing": 7.707634678877325e-10,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 7.707634678877325e-10,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.355800821667975,
+     "rel_diff_to_no_dosing": 6.777533557785613e-14,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 6.777533557785613e-14,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77277.93628827529,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 7.707634678877325e-10
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TD3",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1514490.2967420332,
+     "rel_diff_to_no_dosing": 2.16013491867077e-12,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 2.16013491867077e-12,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.9095012427,
+     "rel_diff_to_no_dosing": 2.1960057120818384e-12,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 2.1960057120818384e-12,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.2168627595987145,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83246.0782186008,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 2.1960057120818384e-12
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TD3",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1498202.36672686,
+     "rel_diff_to_no_dosing": 1.6317700550070836e-14,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 1.6317700550070836e-14,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.9095045186,
+     "rel_diff_to_no_dosing": 1.6881629354425473e-14,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 1.6881629354425473e-14,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.2655296713728,
+     "rel_diff_to_no_dosing": 7.560142902125372e-13,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 7.560142902125372e-13,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81717.49977233735,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": true,
+   "constant_name": "no dosing (0, 0)",
+   "max_rel_diff_to_no_dosing": 7.560142902125372e-13
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "TD3",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1514311.6470624087,
+     "rel_diff_to_no_dosing": 2.2068898920500927e-08,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 2.2068898920500927e-08,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1503322.8766431448,
+     "rel_diff_to_no_dosing": 2.1859175924241013e-08,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 2.1859175924241013e-08,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5.950544031238069,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83378.14605398093,
+     "rel_diff_to_no_dosing": 0.0,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 2.2068898920500927e-08
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "SAC",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1457841.4059832268,
+     "rel_diff_to_no_dosing": 0.02229587415299161,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02229587415299161,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1470317.3789210143,
+     "rel_diff_to_no_dosing": 0.022447895302543926,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.022447895302543926,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -27.286144768146954,
+     "rel_diff_to_no_dosing": 0.8004570136561634,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.8004570136561634,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79685.3771363291,
+     "rel_diff_to_no_dosing": 9.774534615988811e-05,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 9.774534615988811e-05,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.8004570136561634
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "SAC",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1455613.6813846745,
+     "rel_diff_to_no_dosing": 0.021407185110864434,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.021407185110864434,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1472050.8760160531,
+     "rel_diff_to_no_dosing": 0.021243853726798653,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.021243853726798653,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -28.751834043383184,
+     "rel_diff_to_no_dosing": 0.7789427689351094,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.7789427689351094,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77278.94656868251,
+     "rel_diff_to_no_dosing": 1.307316484089412e-05,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 1.307316484089412e-05,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.7789427689351094
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "SAC",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1482033.6353072529,
+     "rel_diff_to_no_dosing": 0.02190008422536441,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02190008422536441,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1471176.941712625,
+     "rel_diff_to_no_dosing": 0.021850510894017388,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.021850510894017388,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -27.46707599595411,
+     "rel_diff_to_no_dosing": 0.7736612823107033,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.7736612823107033,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83259.51807826152,
+     "rel_diff_to_no_dosing": 0.00016142130018201173,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00016142130018201173,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.7736612823107033
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "SAC",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1460459.3562330543,
+     "rel_diff_to_no_dosing": 0.025843246053200812,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.025843246053200812,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1465061.0016658956,
+     "rel_diff_to_no_dosing": 0.02611625577033411,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02611625577033411,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -26.282542639053123,
+     "rel_diff_to_no_dosing": 0.7996567629060062,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.7996567629060062,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81707.01483919514,
+     "rel_diff_to_no_dosing": 0.00012832353700414394,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00012832353700414394,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.7996567629060062
+  },
+  {
+   "model": "Model 1 (Full, Default, Noise)",
+   "algo": "SAC",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1482646.2147053243,
+     "rel_diff_to_no_dosing": 0.02135739832079135,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02135739832079135,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1471954.0031597523,
+     "rel_diff_to_no_dosing": 0.02131106425707186,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02131106425707186,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -24.101427179939446,
+     "rel_diff_to_no_dosing": 0.7531040802350933,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.7531040802350933,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83365.60575733699,
+     "rel_diff_to_no_dosing": 0.00015042530465676638,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00015042530465676638,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.7531040802350933
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "PPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1142382.2218843005,
+     "rel_diff_to_no_dosing": 0.30459422945833464,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.1585018238545147,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1149941.8548123937,
+     "rel_diff_to_no_dosing": 0.3073034112231721,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15749746664069333,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10523.012797953423,
+     "rel_diff_to_no_dosing": 0.9994825855563052,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.045825759378476695,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -85119.32159640576,
+     "rel_diff_to_no_dosing": 0.06374763665331787,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.058895992051415325,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994825855563052
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "PPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1135690.056797965,
+     "rel_diff_to_no_dosing": 0.30913735135084897,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15896029156748925,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150041.2052021166,
+     "rel_diff_to_no_dosing": 0.30719047517983417,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15739747211537206,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10506.11581889339,
+     "rel_diff_to_no_dosing": 0.9993950380015574,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.047591310070644995,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82073.52972628931,
+     "rel_diff_to_no_dosing": 0.05843045198625017,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.05843045198625017,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9993950380015574
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "PPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1157610.2699275452,
+     "rel_diff_to_no_dosing": 0.3082903081363442,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15646663739395736,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150053.71777797,
+     "rel_diff_to_no_dosing": 0.3071762529572347,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15738487963952638,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10528.857404086091,
+     "rel_diff_to_no_dosing": 0.9994095406062593,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.04531601907699134,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -87554.08804085961,
+     "rel_diff_to_no_dosing": 0.0492039825741587,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0492039825741587,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994095406062593
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "PPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1151168.6124892938,
+     "rel_diff_to_no_dosing": 0.30146214070861677,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15589762479088745,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1151772.1244489495,
+     "rel_diff_to_no_dosing": 0.3052259883644861,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15565809891975954,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10526.59691504298,
+     "rel_diff_to_no_dosing": 0.9994997880403452,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.04545328614067988,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -85724.97666591956,
+     "rel_diff_to_no_dosing": 0.046748066309773656,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.046748066309773656,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994997880403452
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "PPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1158205.810888238,
+     "rel_diff_to_no_dosing": 0.307463376755346,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15538644792570153,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150651.097760447,
+     "rel_diff_to_no_dosing": 0.3064976102925679,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15678400370027426,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10505.72536942797,
+     "rel_diff_to_no_dosing": 0.9994335903688711,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.04759307994299196,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -88268.61190652993,
+     "rel_diff_to_no_dosing": 0.05540435888725251,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.05540435888725251,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994335903688711
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1143349.598293294,
+     "rel_diff_to_no_dosing": 0.3034904256149862,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15752162730234404,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150933.6336079543,
+     "rel_diff_to_no_dosing": 0.30617688597032094,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15650003168023377,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10544.783042467494,
+     "rel_diff_to_no_dosing": 0.9994836537849173,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.04366659854898503,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -87406.88718639992,
+     "rel_diff_to_no_dosing": 0.08825072512705802,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.031183141122015708,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994836537849173
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1135702.8264319433,
+     "rel_diff_to_no_dosing": 0.3091226316509283,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15894726043084476,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150030.3978743665,
+     "rel_diff_to_no_dosing": 0.30720275940807995,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15740834867467124,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10506.11581889339,
+     "rel_diff_to_no_dosing": 0.9993950380015574,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.047591310070644995,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -86123.15655256428,
+     "rel_diff_to_no_dosing": 0.10270432039831716,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.018513619509329476,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9993950380015574
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1157704.2588434513,
+     "rel_diff_to_no_dosing": 0.30818409380154077,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15637274895509234,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1150150.8282461215,
+     "rel_diff_to_no_dosing": 0.30706588439098786,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.1572871583800767,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10503.184186955426,
+     "rel_diff_to_no_dosing": 0.9994080973303963,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.04733809201216598,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -92806.01437589881,
+     "rel_diff_to_no_dosing": 0.10300987734024135,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.010009115117146746,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994080973303963
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1151280.3606360971,
+     "rel_diff_to_no_dosing": 0.3013358152823074,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15578542847287383,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1151888.850590086,
+     "rel_diff_to_no_dosing": 0.30509372387312056,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15554099082353043,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10603.216559342458,
+     "rel_diff_to_no_dosing": 0.9995034026097741,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.037898761674682604,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -91087.65070335942,
+     "rel_diff_to_no_dosing": 0.10286960810458677,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.011734970117356783,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9995034026097741
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TRPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1158632.4830736646,
+     "rel_diff_to_no_dosing": 0.306981896851688,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15496097110889337,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1151082.44127031,
+     "rel_diff_to_no_dosing": 0.3060080282742468,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.1563505236519133,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10549.118159273004,
+     "rel_diff_to_no_dosing": 0.9994359202407826,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.043283922246740915,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -90543.09853298304,
+     "rel_diff_to_no_dosing": 0.07913306033360522,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.03671039005763935,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994359202407826
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TD3",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1184721.144940009,
+     "rel_diff_to_no_dosing": 0.2579713469885912,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11709991270473256,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1192789.7162440922,
+     "rel_diff_to_no_dosing": 0.2603419437906223,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11591738728325766,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -8324.520007806419,
+     "rel_diff_to_no_dosing": 0.9993459372062605,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.2018996889725951,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82029.33681154097,
+     "rel_diff_to_no_dosing": 0.028479698742500524,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.028479698742500524,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9993459372062605
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TD3",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1169072.5152179704,
+     "rel_diff_to_no_dosing": 0.27175539032732976,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.12586658417118152,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1183805.9394484784,
+     "rel_diff_to_no_dosing": 0.26990654414601506,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.12438596510976183,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5158.202938511031,
+     "rel_diff_to_no_dosing": 0.9987678265284571,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.8049018967259859,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -84158.05712742929,
+     "rel_diff_to_no_dosing": 0.0817523725474835,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.04229601891951748,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9987678265284571
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TD3",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1178233.502813252,
+     "rel_diff_to_no_dosing": 0.2853906234453333,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13622440125775923,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1170657.7062949636,
+     "rel_diff_to_no_dosing": 0.2841694898694501,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13701449755294035,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -11005.87240722252,
+     "rel_diff_to_no_dosing": 0.9994351322158234,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 1.007642483532915e-05,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -92564.37726889671,
+     "rel_diff_to_no_dosing": 0.10066830594264722,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.012645719908574033,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994351322158234
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TD3",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1170196.463737556,
+     "rel_diff_to_no_dosing": 0.28029985831754434,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13710227824498186,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1170834.959630548,
+     "rel_diff_to_no_dosing": 0.28397507875824884,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.1368423643153381,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -9015.9785688432,
+     "rel_diff_to_no_dosing": 0.9994159780182302,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.10970377901644579,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -89926.19098764425,
+     "rel_diff_to_no_dosing": 0.09128254099447805,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.024802235592139985,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994159780182302
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "TD3",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1164378.2675960162,
+     "rel_diff_to_no_dosing": 0.30053241513005763,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.14926165752979448,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1156756.358409274,
+     "rel_diff_to_no_dosing": 0.2996020281849627,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.15067859714197734,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10446.604191178356,
+     "rel_diff_to_no_dosing": 0.9994303848482875,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.0422030586254039,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -89147.66411421308,
+     "rel_diff_to_no_dosing": 0.06471866781434038,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.05293808794470284,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994303848482875
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "SAC",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1163788.5855383659,
+     "rel_diff_to_no_dosing": 0.2805979307802018,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13719270324318333,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1171510.4285102433,
+     "rel_diff_to_no_dosing": 0.2832347650684182,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13618688433024678,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10082.498844680606,
+     "rel_diff_to_no_dosing": 0.9994599792276972,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.007662865886931133,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83268.95645840623,
+     "rel_diff_to_no_dosing": 0.042942659538326336,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.042942659538326336,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994599792276972
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "SAC",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1175270.7282723002,
+     "rel_diff_to_no_dosing": 0.2650483306919477,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11992892164664806,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1190058.5572120661,
+     "rel_diff_to_no_dosing": 0.26323440169730633,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11847839391003535,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -9955.096635397038,
+     "rel_diff_to_no_dosing": 0.9993615530763339,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.005124949539905013,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82400.27775220759,
+     "rel_diff_to_no_dosing": 0.06216412861296537,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.06216412861296537,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9993615530763339
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "SAC",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1196553.4831719873,
+     "rel_diff_to_no_dosing": 0.2657104910433983,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11882809678252823,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1188702.0999327889,
+     "rel_diff_to_no_dosing": 0.2646759096240717,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.11975471718667413,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -5173.555690203191,
+     "rel_diff_to_no_dosing": 0.998798338486745,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.8055077134663732,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -87415.6007693191,
+     "rel_diff_to_no_dosing": 0.04769769370711359,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.04769769370711359,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.998798338486745
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "SAC",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1172492.4976117895,
+     "rel_diff_to_no_dosing": 0.2777927106386799,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13487554728112797,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1173164.1184464598,
+     "rel_diff_to_no_dosing": 0.2814259197556184,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.13458531743373603,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6004.337594217489,
+     "rel_diff_to_no_dosing": 0.9991230457000885,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.666306288142762,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -88073.67032057904,
+     "rel_diff_to_no_dosing": 0.07216879375079845,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.046357682460413406,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9991230457000885
+  },
+  {
+   "model": "Model 2 (Reduced, Default, Noise)",
+   "algo": "SAC",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1194716.8001424433,
+     "rel_diff_to_no_dosing": 0.26750681023406686,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.12007740884661589,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1186919.4898749953,
+     "rel_diff_to_no_dosing": 0.2665753004551908,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.12143645384880357,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -10241.281636680753,
+     "rel_diff_to_no_dosing": 0.9994189649067041,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.023000646108140035,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -90071.57219721048,
+     "rel_diff_to_no_dosing": 0.0743123049809143,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.04213758800207983,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9994189649067041
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "PPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1472142.2820605796,
+     "rel_diff_to_no_dosing": 0.012364954574900605,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.012364954574900605,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1484977.8239333008,
+     "rel_diff_to_no_dosing": 0.012353777460899768,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.012353777460899768,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -148.05238101728406,
+     "rel_diff_to_no_dosing": 0.963224105040157,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.963224105040157,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79167.96042228324,
+     "rel_diff_to_no_dosing": 0.0066340674436536655,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0066340674436536655,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.963224105040157
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "PPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1434914.972438867,
+     "rel_diff_to_no_dosing": 0.036141026798941926,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.02756528529357978,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1450178.2116011987,
+     "rel_diff_to_no_dosing": 0.036647011710833934,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.02746135184015593,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -850.5851223418779,
+     "rel_diff_to_no_dosing": 0.992527731023359,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.18313333160024514,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -76571.31300706138,
+     "rel_diff_to_no_dosing": 0.00922830304801932,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00922830304801932,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.992527731023359
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "PPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1475477.6735180293,
+     "rel_diff_to_no_dosing": 0.026440673368005888,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.026440673368005888,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1464750.7406894863,
+     "rel_diff_to_no_dosing": 0.02633360594642954,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02633360594642954,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -658.8717198758343,
+     "rel_diff_to_no_dosing": 0.9905643806342602,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.5271814608863432,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82391.1781882262,
+     "rel_diff_to_no_dosing": 0.010376111243627853,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.010376111243627853,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9905643806342602
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "PPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1472140.2005095158,
+     "rel_diff_to_no_dosing": 0.0177035897860464,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0177035897860464,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1477034.3959858753,
+     "rel_diff_to_no_dosing": 0.017798172872691927,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.017798172872691927,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -299.9239221169234,
+     "rel_diff_to_no_dosing": 0.9824437822958447,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9824437822958447,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81030.65699459598,
+     "rel_diff_to_no_dosing": 0.008476332331689977,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.008476332331689977,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9824437822958447
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "PPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1486099.3945497426,
+     "rel_diff_to_no_dosing": 0.01898411777524785,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.01898411777524785,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1475679.5097428854,
+     "rel_diff_to_no_dosing": 0.01873265812742434,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.01873265812742434,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -320.6140122985087,
+     "rel_diff_to_no_dosing": 0.981440162304267,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.981440162304267,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82633.66746489136,
+     "rel_diff_to_no_dosing": 0.00900938578583457,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00900938578583457,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.981440162304267
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TRPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1458352.3079448815,
+     "rel_diff_to_no_dosing": 0.02193773506365712,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02193773506365712,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1470819.8466953107,
+     "rel_diff_to_no_dosing": 0.022098602274277394,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.022098602274277394,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -1244.6994580644525,
+     "rel_diff_to_no_dosing": 0.9956256437828671,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.19221898223119133,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79024.69835862299,
+     "rel_diff_to_no_dosing": 0.008458971262941125,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.008458971262941125,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9956256437828671
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TRPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1442263.7542045151,
+     "rel_diff_to_no_dosing": 0.030861566462937185,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.030861566462937185,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1457854.4066198412,
+     "rel_diff_to_no_dosing": 0.031188644543816504,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.031188644543816504,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -920.4699353509972,
+     "rel_diff_to_no_dosing": 0.9930950478906799,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.09330633294633427,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -76581.11338683733,
+     "rel_diff_to_no_dosing": 0.009099148218413476,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009099148218413476,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9930950478906799
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TRPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1446121.0690626102,
+     "rel_diff_to_no_dosing": 0.04727766515912265,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.01766007761214846,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1435770.9920394127,
+     "rel_diff_to_no_dosing": 0.04704922849094372,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.017702429342036034,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -992.310392114178,
+     "rel_diff_to_no_dosing": 0.9937349615513416,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.014014046101913693,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82449.91939771811,
+     "rel_diff_to_no_dosing": 0.009656271670105738,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009656271670105738,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9937349615513416
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TRPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1402626.6036277707,
+     "rel_diff_to_no_dosing": 0.06814056061101036,
+     "nearest_constant": "virus only (1000, 0)",
+     "rel_diff_to_nearest": 0.002018116975051295,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1405951.477750566,
+     "rel_diff_to_no_dosing": 0.06925660899035155,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0031316014959266465,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -1857.5356397114297,
+     "rel_diff_to_no_dosing": 0.9971653143235589,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.4588177207448497,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -80973.37619499302,
+     "rel_diff_to_no_dosing": 0.009189731394580852,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009189731394580852,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9971653143235589
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TRPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1418141.2292908183,
+     "rel_diff_to_no_dosing": 0.06781443850897265,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0016901677637461993,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1408722.167513513,
+     "rel_diff_to_no_dosing": 0.06715358370345481,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0011586315780477549,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -3771.8245839628617,
+     "rel_diff_to_no_dosing": 0.9984223698905461,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.7332987410633123,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82944.85886697893,
+     "rel_diff_to_no_dosing": 0.00522379798966055,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00522379798966055,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9984223698905461
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TD3",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1341799.9501540035,
+     "rel_diff_to_no_dosing": 0.11070599930712223,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.013674216160138166,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1352092.3157957694,
+     "rel_diff_to_no_dosing": 0.11184931083627102,
+     "nearest_constant": "full dose (1000, 100)",
+     "rel_diff_to_nearest": 0.015559242383492303,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -632.8851501161388,
+     "rel_diff_to_no_dosing": 0.9913969243679566,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.5886683308449915,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79147.72410228141,
+     "rel_diff_to_no_dosing": 0.006891441478656981,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.006891441478656981,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9913969243679566
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TD3",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1422405.0736246402,
+     "rel_diff_to_no_dosing": 0.04525377508905686,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.019012827129591955,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1437635.944931785,
+     "rel_diff_to_no_dosing": 0.04569095869112794,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.018976700969722596,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -786.9620017079637,
+     "rel_diff_to_no_dosing": 0.9919236242564782,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.278785516228012,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -76664.76836854448,
+     "rel_diff_to_no_dosing": 0.007998040466034901,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.007998040466034901,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9919236242564782
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TD3",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1428388.8109323806,
+     "rel_diff_to_no_dosing": 0.060278745642596686,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.005465145152518842,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1418450.1788331477,
+     "rel_diff_to_no_dosing": 0.05983483377697105,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.005707511939769027,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -313.7211726647139,
+     "rel_diff_to_no_dosing": 0.9801834772361924,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9801834772361924,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82702.55838343626,
+     "rel_diff_to_no_dosing": 0.006571983331453919,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.006571983331453919,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9801834772361924
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TD3",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1441339.5647754117,
+     "rel_diff_to_no_dosing": 0.039451357154920645,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0246552400903042,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1445772.115347875,
+     "rel_diff_to_no_dosing": 0.03980626929080129,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.02449746918646508,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -708.6226718708479,
+     "rel_diff_to_no_dosing": 0.9925693463102625,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.4186186968061371,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -80965.0831097121,
+     "rel_diff_to_no_dosing": 0.00929310060246205,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00929310060246205,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9925693463102625
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "TD3",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1488458.178923759,
+     "rel_diff_to_no_dosing": 0.017369316735881737,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.017369316735881737,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1477709.8672296177,
+     "rel_diff_to_no_dosing": 0.017332930396509544,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.017332930396509544,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -33.673359183123054,
+     "rel_diff_to_no_dosing": 0.8232862958851918,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.8232862958851918,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83450.37791495546,
+     "rel_diff_to_no_dosing": 0.0008655666131091557,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0008655666131091557,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.8232862958851918
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "SAC",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1434734.6406778037,
+     "rel_diff_to_no_dosing": 0.03876020850934061,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.025119593389779742,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1446636.1458806142,
+     "rel_diff_to_no_dosing": 0.03918522552153068,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.025080106343560383,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -500.58145754751376,
+     "rel_diff_to_no_dosing": 0.9891231312491644,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9891231312491644,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79250.5730288321,
+     "rel_diff_to_no_dosing": 0.0055847291111453205,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0055847291111453205,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9891231312491644
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "SAC",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1402507.2291683787,
+     "rel_diff_to_no_dosing": 0.06008314395182886,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.005095230290581542,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1418773.74978323,
+     "rel_diff_to_no_dosing": 0.05959312380443462,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.005934274075078105,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -355.6909763553241,
+     "rel_diff_to_no_dosing": 0.9821311159287934,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9821311159287934,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77292.68579007337,
+     "rel_diff_to_no_dosing": 0.00019082661764585648,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00019082661764585648,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9821311159287934
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "SAC",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1446018.2618465777,
+     "rel_diff_to_no_dosing": 0.04735212320990165,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.017590236424604104,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1435736.4421247775,
+     "rel_diff_to_no_dosing": 0.047074424940934036,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.017678791091855224,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -1092.52673986995,
+     "rel_diff_to_no_dosing": 0.9943096470477795,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.07900041346681357,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82801.33675230031,
+     "rel_diff_to_no_dosing": 0.0053711870332592655,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0053711870332592655,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9943096470477795
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "SAC",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1432977.0200329279,
+     "rel_diff_to_no_dosing": 0.04551737102696716,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.018963338489603996,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1437450.1407121369,
+     "rel_diff_to_no_dosing": 0.04582612427848986,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.0188498942977063,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -348.7304977116096,
+     "rel_diff_to_no_dosing": 0.9849008626835865,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9849008626835865,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81533.32318887461,
+     "rel_diff_to_no_dosing": 0.0022589117707871777,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0022589117707871777,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9849008626835865
+  },
+  {
+   "model": "Model 3 (Reduced, Modified, Noise)",
+   "algo": "SAC",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1473670.936970496,
+     "rel_diff_to_no_dosing": 0.02757789577817872,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02757789577817872,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1463251.5119947554,
+     "rel_diff_to_no_dosing": 0.02738517416951916,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02738517416951916,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -117.92306626346547,
+     "rel_diff_to_no_dosing": 0.9495387609923297,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9495387609923297,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83311.80645765175,
+     "rel_diff_to_no_dosing": 0.0007962808532174276,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0007962808532174276,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9495387609923297
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "PPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1454630.5909812797,
+     "rel_diff_to_no_dosing": 0.024552394089743922,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024552394089743922,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1467010.11828831,
+     "rel_diff_to_no_dosing": 0.024752924852763328,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024752924852763328,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -590.4303983131164,
+     "rel_diff_to_no_dosing": 0.9907783223417997,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.702901134366022,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -78948.85383324453,
+     "rel_diff_to_no_dosing": 0.009427776867144586,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009427776867144586,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9907783223417997
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "PPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1452637.0973360937,
+     "rel_diff_to_no_dosing": 0.023500140288645794,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.023500140288645794,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1468438.4357483457,
+     "rel_diff_to_no_dosing": 0.02375617043721719,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02375617043721719,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -528.0809036054649,
+     "rel_diff_to_no_dosing": 0.987964342625773,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.9056845319250695,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -76569.94646847193,
+     "rel_diff_to_no_dosing": 0.009246314676410032,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009246314676410032,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.987964342625773
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "PPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1477618.1496680942,
+     "rel_diff_to_no_dosing": 0.02495377245162614,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02495377245162614,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1466774.4828809116,
+     "rel_diff_to_no_dosing": 0.02491755007344222,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02491755007344222,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -587.1259691535364,
+     "rel_diff_to_no_dosing": 0.9894113647049856,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.7138003232037985,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82401.81170479183,
+     "rel_diff_to_no_dosing": 0.010245727567660618,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.010245727567660618,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9894113647049856
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "PPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1461154.8000717037,
+     "rel_diff_to_no_dosing": 0.025354990897174346,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.025354990897174346,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1465819.960495817,
+     "rel_diff_to_no_dosing": 0.02558496269626559,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02558496269626559,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -631.3698786879637,
+     "rel_diff_to_no_dosing": 0.9916601506516102,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.5921972289614539,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -80930.4657049788,
+     "rel_diff_to_no_dosing": 0.009724818218983038,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009724818218983038,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9916601506516102
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "PPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1477662.088494792,
+     "rel_diff_to_no_dosing": 0.024802417462127684,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024802417462127684,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1467369.6323467155,
+     "rel_diff_to_no_dosing": 0.024501854451171624,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024501854451171624,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -561.5275740474345,
+     "rel_diff_to_no_dosing": 0.9894029353031638,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.791453192192245,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82536.56199806907,
+     "rel_diff_to_no_dosing": 0.010196500018156253,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.010196500018156253,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9894029353031638
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TRPO",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1451537.1855694004,
+     "rel_diff_to_no_dosing": 0.026735842059344404,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.026735842059344404,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1463341.7677166783,
+     "rel_diff_to_no_dosing": 0.027321807297450505,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.027321807297450505,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -610.5193314876482,
+     "rel_diff_to_no_dosing": 0.9910817585422248,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.646867745533345,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -78946.8479646732,
+     "rel_diff_to_no_dosing": 0.009453424242623737,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009453424242623737,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9910817585422248
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TRPO",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1451409.4706542394,
+     "rel_diff_to_no_dosing": 0.024365834020500483,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024365834020500483,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1467298.3820718687,
+     "rel_diff_to_no_dosing": 0.024551603050095062,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.024551603050095062,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -680.3530711722914,
+     "rel_diff_to_no_dosing": 0.9906580846166886,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.4791667036527574,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -76564.976614031,
+     "rel_diff_to_no_dosing": 0.009311825142171352,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009311825142171352,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9906580846166886
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TRPO",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1456362.6501565701,
+     "rel_diff_to_no_dosing": 0.03991289297517031,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.024568188017127554,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1446030.7650249875,
+     "rel_diff_to_no_dosing": 0.03962028047070386,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.02467195607894344,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -1113.6427833095981,
+     "rel_diff_to_no_dosing": 0.9944175431720366,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.09646370382221484,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82397.20638829899,
+     "rel_diff_to_no_dosing": 0.010302191876524062,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.010302191876524062,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9944175431720366
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TRPO",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1452189.388953282,
+     "rel_diff_to_no_dosing": 0.03168524582511092,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.03168524582511092,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1456674.6173904235,
+     "rel_diff_to_no_dosing": 0.032023824371766055,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.03179863185363555,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -649.1784062861688,
+     "rel_diff_to_no_dosing": 0.991888932810486,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.5485194232624664,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -80928.18554044105,
+     "rel_diff_to_no_dosing": 0.009753267376813668,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.009753267376813668,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.991888932810486
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TRPO",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1476294.7526374785,
+     "rel_diff_to_no_dosing": 0.02575158366999655,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.02575158366999655,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1466041.276571407,
+     "rel_diff_to_no_dosing": 0.025430138652253097,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.025430138652253097,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -1863.385678453459,
+     "rel_diff_to_no_dosing": 0.9968065955963681,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.4601491378499027,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82536.29929598783,
+     "rel_diff_to_no_dosing": 0.01019971533947882,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.01019971533947882,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9968065955963681
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TD3",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1477803.118817861,
+     "rel_diff_to_no_dosing": 0.008487013952319362,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.008487013952319362,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1490538.5289525222,
+     "rel_diff_to_no_dosing": 0.008577021193142874,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.008577021193142874,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -70.9845599732079,
+     "rel_diff_to_no_dosing": 0.9232965758342188,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9232965758342188,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79313.81356184492,
+     "rel_diff_to_no_dosing": 0.004782930390309091,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.004782930390309091,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9232965758342188
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TD3",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1485949.7913455344,
+     "rel_diff_to_no_dosing": 0.000554851564467817,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.000554851564467817,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1502488.85717876,
+     "rel_diff_to_no_dosing": 0.0005551138178489425,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.0005551138178489425,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -6.35691047008348,
+     "rel_diff_to_no_dosing": 0.00017455781722234415,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00017455781722234415,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77286.92043177882,
+     "rel_diff_to_no_dosing": 0.00011624403525644997,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00011624403525644997,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.0005551138178489425
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TD3",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1469637.9212641346,
+     "rel_diff_to_no_dosing": 0.030519337336226048,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.030519337336226048,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1458890.3754239925,
+     "rel_diff_to_no_dosing": 0.03045638988991081,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.03045638988991081,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -207.99736498961343,
+     "rel_diff_to_no_dosing": 0.9701108580875092,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9701108580875092,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82766.93056185702,
+     "rel_diff_to_no_dosing": 0.005789119561292427,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.005789119561292427,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9701108580875092
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TD3",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1480338.3547315367,
+     "rel_diff_to_no_dosing": 0.012067519522310404,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.012067519522310404,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1485214.3101609454,
+     "rel_diff_to_no_dosing": 0.01219258340005911,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.01219258340005911,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -146.5607919642892,
+     "rel_diff_to_no_dosing": 0.9640727264038542,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9640727264038542,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81217.35363585537,
+     "rel_diff_to_no_dosing": 0.00615811909760604,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00615811909760604,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9640727264038542
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "TD3",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1485984.1217253327,
+     "rel_diff_to_no_dosing": 0.019063163826660828,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.019063163826660828,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1475248.9236566296,
+     "rel_diff_to_no_dosing": 0.01902999920740745,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.01902999920740745,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -203.84501890403817,
+     "rel_diff_to_no_dosing": 0.9708084893943896,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9708084893943896,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82984.49588964056,
+     "rel_diff_to_no_dosing": 0.004743659163319892,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.004743659163319892,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9708084893943896
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "SAC",
+   "seed": 42,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1444470.7369619315,
+     "rel_diff_to_no_dosing": 0.031758703288515815,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.031690532669747244,
+     "no_dosing_return": -1490345.2545060492
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1456680.8029672087,
+     "rel_diff_to_no_dosing": 0.032019442037217044,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.03180274317568629,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -176.15664015278145,
+     "rel_diff_to_no_dosing": 0.9690913790810042,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9690913790810042,
+     "no_dosing_return": -5.444758812846296
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -79387.47178037389,
+     "rel_diff_to_no_dosing": 0.003850660864638561,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.003850660864638561,
+     "no_dosing_return": -79693.16601110117
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9690913790810042
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "SAC",
+   "seed": 123,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1441234.5245785487,
+     "rel_diff_to_no_dosing": 0.031597736216283916,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.031597736216283916,
+     "no_dosing_return": -1486774.272911983
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1457355.8372818013,
+     "rel_diff_to_no_dosing": 0.03154141977327827,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.03154141977327827,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -130.37364671318207,
+     "rel_diff_to_no_dosing": 0.9512493438520585,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9512493438520585,
+     "no_dosing_return": -6.355800821667544
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -77050.18328388035,
+     "rel_diff_to_no_dosing": 0.00295590477125556,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.00295590477125556,
+     "no_dosing_return": -77277.93628827529
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9512493438520585
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "SAC",
+   "seed": 456,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1465665.9691253824,
+     "rel_diff_to_no_dosing": 0.03331204288590916,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.03075974425870311,
+     "no_dosing_return": -1514490.2967453047
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1455034.4340203223,
+     "rel_diff_to_no_dosing": 0.03318717025190846,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.03070722965323871,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -175.85948503769933,
+     "rel_diff_to_no_dosing": 0.9646486923451073,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9646486923451073,
+     "no_dosing_return": -6.2168627595987145
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -82899.3262394866,
+     "rel_diff_to_no_dosing": 0.004182808170388143,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.004182808170388143,
+     "no_dosing_return": -83246.0782186008
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9646486923451073
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "SAC",
+   "seed": 789,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1448622.322767283,
+     "rel_diff_to_no_dosing": 0.0342256523183277,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.029558657449973914,
+     "no_dosing_return": -1498202.3667268844
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1453123.2441472758,
+     "rel_diff_to_no_dosing": 0.034546048010350584,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.029432387664326074,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -173.2315612400263,
+     "rel_diff_to_no_dosing": 0.9696040973499453,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9696040973499453,
+     "no_dosing_return": -5.265529671368819
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -81390.80589452673,
+     "rel_diff_to_no_dosing": 0.004013891670196572,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.004013891670196572,
+     "no_dosing_return": -81717.49977233735
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9696040973499453
+  },
+  {
+   "model": "Model 4 (Reduced, Modified, No Noise)",
+   "algo": "SAC",
+   "seed": 1024,
+   "tests": {
+    "Test 1 (Reduced, Default, Noise)": {
+     "return": -1457419.3399607502,
+     "rel_diff_to_no_dosing": 0.03903635622289834,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.02530583550561252,
+     "no_dosing_return": -1514311.6804815994
+    },
+    "Test 2 (Reduced, Default, No Noise)": {
+     "return": -1447152.3951247518,
+     "rel_diff_to_no_dosing": 0.03881451225801963,
+     "nearest_constant": "drug only (0, 100)",
+     "rel_diff_to_nearest": 0.025427893943463793,
+     "no_dosing_return": -1503322.909504544
+    },
+    "Test 3 (Full, Modified, Noise)": {
+     "return": -198.54349636260375,
+     "rel_diff_to_no_dosing": 0.9700290156048703,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.9700290156048703,
+     "no_dosing_return": -5.950544031238069
+    },
+    "Test 4 (Full, Modified, Zero-Lysis Control)": {
+     "return": -83043.41586499207,
+     "rel_diff_to_no_dosing": 0.004030785409081078,
+     "nearest_constant": "no dosing (0, 0)",
+     "rel_diff_to_nearest": 0.004030785409081078,
+     "no_dosing_return": -83378.14605398093
+    }
+   },
+   "exact_constant_on_all_tests": false,
+   "constant_name": null,
+   "max_rel_diff_to_no_dosing": 0.9700290156048703
+  }
+ ],
+ "curves": {
+  "Model 1 (Full, Default, Noise)|PPO": {
+   "first_logged": [
+    -3923.960274606,
+    -3862.471855877418,
+    -4330.342350130096,
+    -4054.5798576459056,
+    -4150.469127433003
+   ],
+   "at_10k": [
+    -382.6800331372099,
+    -315.74443460943587,
+    -267.3093601172843,
+    -267.8568505566765,
+    -362.31281558316886
+   ],
+   "final": [
+    -4.571815923879452,
+    -4.7624384000542,
+    -4.595647592284997,
+    -4.317432172995776,
+    -4.690795826698011
+   ],
+   "rel_change_10k_to_50k": [
+    0.9880531631441554,
+    0.9849167938432704,
+    0.9828077565624017,
+    0.9838815689648295,
+    0.987053188225904
+   ]
+  },
+  "Model 1 (Full, Default, Noise)|TRPO": {
+   "first_logged": [
+    -3923.960274606,
+    -3862.471855877418,
+    -4330.342350130096,
+    -4054.5798576459056,
+    -4150.469127433003
+   ],
+   "at_10k": [
+    -434.4793817225378,
+    -402.60480365475155,
+    -477.55956418279254,
+    -432.4734024207113,
+    -476.5886899378118
+   ],
+   "final": [
+    -4.571815923879452,
+    -4.759570646330637,
+    -4.595647592284997,
+    -4.317432172995776,
+    -4.690795826698011
+   ],
+   "rel_change_10k_to_50k": [
+    0.9894774847410387,
+    0.9881780579786322,
+    0.9903768075503856,
+    0.9900168839312903,
+    0.9901575594936797
+   ]
+  },
+  "Model 1 (Full, Default, Noise)|TD3": {
+   "first_logged": [
+    -3938.5588954082677,
+    -3615.799566513901,
+    -4250.620361360965,
+    -3625.6264527339804,
+    -3469.877210305041
+   ],
+   "at_10k": [
+    -60.78909909745857,
+    -70.3041562319954,
+    -56.669247924876515,
+    -66.34098027470841,
+    -58.56252659276927
+   ],
+   "final": [
+    -54.08927626382641,
+    -54.613267622129484,
+    -66.1171121029433,
+    -50.65469058823658,
+    -53.104481510998866
+   ],
+   "rel_change_10k_to_50k": [
+    0.11021421493499739,
+    0.22318578944447956,
+    0.16671942056812408,
+    0.23644947092305799,
+    0.0932003005902465
+   ]
+  },
+  "Model 1 (Full, Default, Noise)|SAC": {
+   "first_logged": [
+    -3895.0415365894673,
+    -3684.030506788455,
+    -4120.040507603017,
+    -3558.8369627665397,
+    -3523.5855696546
+   ],
+   "at_10k": [
+    -2476.943067267498,
+    -2336.3235726525836,
+    -2597.358850609912,
+    -2560.326544206935,
+    -2354.6123892206683
+   ],
+   "final": [
+    -70.39490515187839,
+    -59.42718584358997,
+    -59.273522517355914,
+    -65.26978159912863,
+    -61.79863128590577
+   ],
+   "rel_change_10k_to_50k": [
+    0.9715799260458835,
+    0.9745638033450484,
+    0.9771793094729913,
+    0.9745072433253447,
+    0.9737542231711608
+   ]
+  },
+  "Model 2 (Reduced, Default, Noise)|PPO": {
+   "first_logged": [
+    -1353888.1781471528,
+    -1363791.24877571,
+    -1359643.5073842315,
+    -1359252.4040262653,
+    -1360926.019899688
+   ],
+   "at_10k": [
+    -1357584.317218949,
+    -1345268.816105755,
+    -1355623.2842439828,
+    -1340830.0127009542,
+    -1363453.3820144916
+   ],
+   "final": [
+    -1154933.009842677,
+    -1152245.63403645,
+    -1153184.3474556052,
+    -1156733.2623574233,
+    -1154280.3319951096
+   ],
+   "rel_change_10k_to_50k": [
+    0.1492734593394605,
+    0.14348298255218833,
+    0.149332738041067,
+    0.1373005888887349,
+    0.15341415612635798
+   ]
+  },
+  "Model 2 (Reduced, Default, Noise)|TRPO": {
+   "first_logged": [
+    -1353888.1781471528,
+    -1363791.24877571,
+    -1359643.5073842315,
+    -1359252.4040262653,
+    -1360926.019899688
+   ],
+   "at_10k": [
+    -1330126.8646573268,
+    -1343579.5408752798,
+    -1331211.5045031412,
+    -1358764.9933943823,
+    -1298763.9951670317
+   ],
+   "final": [
+    -1152236.7313914571,
+    -1151032.4626659849,
+    -1152181.420958062,
+    -1152939.105321642,
+    -1149339.5411288105
+   ],
+   "rel_change_10k_to_50k": [
+    0.13373922292118995,
+    0.1433090281233811,
+    0.13448658078710043,
+    0.15148012281252465,
+    0.11505127536200598
+   ]
+  },
+  "Model 2 (Reduced, Default, Noise)|TD3": {
+   "first_logged": [
+    -1338801.56591189,
+    -1351098.1525944988,
+    -1343985.8695581036,
+    -1353113.4989952296,
+    -1347559.6910862986
+   ],
+   "at_10k": [
+    -1394928.817136231,
+    -1419984.709211743,
+    -1336489.7962927953,
+    -1356162.1388867905,
+    -1487334.223261696
+   ],
+   "final": [
+    -1196577.2997420658,
+    -1187436.1629469488,
+    -1180397.9648874723,
+    -1177720.1708333208,
+    -1164498.0079358672
+   ],
+   "rel_change_10k_to_50k": [
+    0.14219472345648296,
+    0.16376834536048332,
+    0.11679238542508613,
+    0.13157863867217548,
+    0.21705694004529466
+   ]
+  },
+  "Model 2 (Reduced, Default, Noise)|SAC": {
+   "first_logged": [
+    -1340465.7358980072,
+    -1343442.95197492,
+    -1342728.357253941,
+    -1349486.3982138007,
+    -1351189.403603316
+   ],
+   "at_10k": [
+    -1358478.2132459912,
+    -1311207.3608524129,
+    -1362661.2484652835,
+    -1338310.4032584836,
+    -1341112.98083971
+   ],
+   "final": [
+    -1176120.821784553,
+    -1188985.7062718605,
+    -1190690.5540382108,
+    -1178696.8016919985,
+    -1185262.9758515896
+   ],
+   "rel_change_10k_to_50k": [
+    0.13423652266436256,
+    0.09321306318864496,
+    0.12620208773145725,
+    0.11926500845981773,
+    0.11620945230918439
+   ]
+  },
+  "Model 3 (Reduced, Modified, Noise)|PPO": {
+   "first_logged": [
+    -124215.58560120263,
+    -122198.4978961206,
+    -122318.81717313192,
+    -120804.20039321105,
+    -124388.16394581874
+   ],
+   "at_10k": [
+    -94155.968196967,
+    -92715.7334193036,
+    -91638.78322910976,
+    -93682.03904627365,
+    -93788.5165718285
+   ],
+   "final": [
+    -80727.80139823107,
+    -80875.42771188567,
+    -80375.76209722512,
+    -80858.24095727215,
+    -80341.94826358349
+   ],
+   "rel_change_10k_to_50k": [
+    0.1426162043243531,
+    0.12770546347156164,
+    0.1229067075642582,
+    0.13688641088039585,
+    0.1433711588555394
+   ]
+  },
+  "Model 3 (Reduced, Modified, Noise)|TRPO": {
+   "first_logged": [
+    -124215.58560120263,
+    -122198.4978961206,
+    -122318.81717313192,
+    -120804.20039321105,
+    -124388.16394581874
+   ],
+   "at_10k": [
+    -89111.94840899063,
+    -88914.19294973806,
+    -90770.80198610829,
+    -89544.68817560762,
+    -88076.41535430939
+   ],
+   "final": [
+    -81518.24253520394,
+    -80417.11344911063,
+    -80644.5194343792,
+    -80779.29626287123,
+    -81219.10498588132
+   ],
+   "rel_change_10k_to_50k": [
+    0.0852153500104656,
+    0.09556493984521354,
+    0.11155880889185968,
+    0.09788846319444915,
+    0.0778563743862965
+   ]
+  },
+  "Model 3 (Reduced, Modified, Noise)|TD3": {
+   "first_logged": [
+    -120998.74230663653,
+    -117296.40931301701,
+    -119660.6431699283,
+    -116664.09426657904,
+    -118252.69067340977
+   ],
+   "at_10k": [
+    -82456.0856017015,
+    -82965.26553450392,
+    -82340.70917233873,
+    -82383.35517386923,
+    -82326.87305160132
+   ],
+   "final": [
+    -81498.10409478347,
+    -81397.96552625201,
+    -82699.62627222706,
+    -80750.99393227225,
+    -82336.81674769228
+   ],
+   "rel_change_10k_to_50k": [
+    0.011618081308704096,
+    0.018891038293610943,
+    0.004358926507872586,
+    0.01981421171973273,
+    0.00012078311397462584
+   ]
+  },
+  "Model 3 (Reduced, Modified, Noise)|SAC": {
+   "first_logged": [
+    -119820.31055149216,
+    -116621.54991885531,
+    -118309.87554608601,
+    -115915.25519095389,
+    -117867.24530535332
+   ],
+   "at_10k": [
+    -106176.64875291855,
+    -106538.53718541122,
+    -108026.87344658663,
+    -107528.71341546816,
+    -108410.47452937756
+   ],
+   "final": [
+    -81256.96988979758,
+    -81502.86684714262,
+    -81909.61583597239,
+    -81995.81774651035,
+    -81323.75868845476
+   ],
+   "rel_change_10k_to_50k": [
+    0.234700182722013,
+    0.2349916846962006,
+    0.24176630108181174,
+    0.23745188478452361,
+    0.24985330945657577
+   ]
+  },
+  "Model 4 (Reduced, Modified, No Noise)|PPO": {
+   "first_logged": [
+    -122519.1269555078,
+    -122311.78081413545,
+    -121580.16153182989,
+    -122523.66387465148,
+    -122448.08135324
+   ],
+   "at_10k": [
+    -93265.86754832993,
+    -92986.84537535504,
+    -94093.2257799475,
+    -93034.48512694173,
+    -94999.87572539416
+   ],
+   "final": [
+    -80543.1618169783,
+    -80543.57374102982,
+    -80555.17738341448,
+    -80524.73522808123,
+    -80545.56879852987
+   ],
+   "rel_change_10k_to_50k": [
+    0.13641331031160764,
+    0.13381754789181344,
+    0.1438790973985096,
+    0.13446357962632302,
+    0.15215079826678704
+   ]
+  },
+  "Model 4 (Reduced, Modified, No Noise)|TRPO": {
+   "first_logged": [
+    -122519.1269555078,
+    -122311.78081413545,
+    -121580.16153182989,
+    -122523.66387465148,
+    -122448.08135324
+   ],
+   "at_10k": [
+    -88744.5340061915,
+    -88214.01272783143,
+    -88683.67382480821,
+    -88294.48617038158,
+    -87965.53231860902
+   ],
+   "final": [
+    -80481.23764024633,
+    -80480.39433074654,
+    -80475.30447440979,
+    -80473.17400105228,
+    -80486.33187086086
+   ],
+   "rel_change_10k_to_50k": [
+    0.09311329941029006,
+    0.08766881992938685,
+    0.09255784065299097,
+    0.0885821132050822,
+    0.0850242163107555
+   ]
+  },
+  "Model 4 (Reduced, Modified, No Noise)|TD3": {
+   "first_logged": [
+    -118623.34024362457,
+    -117479.21277611396,
+    -120458.54644331885,
+    -117056.64142598791,
+    -118759.97410976916
+   ],
+   "at_10k": [
+    -82279.95050669758,
+    -82237.56764293497,
+    -81519.40913756228,
+    -82458.40330293626,
+    -82383.763572453
+   ],
+   "final": [
+    -81409.10758886037,
+    -81698.46992335941,
+    -81441.3693343754,
+    -81350.52793100703,
+    -81447.11363558605
+   ],
+   "rel_change_10k_to_50k": [
+    0.010583901819026137,
+    0.006555370435033396,
+    0.000957315613698722,
+    0.0134355666318096,
+    0.011369351147003656
+   ]
+  },
+  "Model 4 (Reduced, Modified, No Noise)|SAC": {
+   "first_logged": [
+    -117884.82771709836,
+    -116936.03992223767,
+    -119414.60095704364,
+    -115967.64315140525,
+    -118435.33595513683
+   ],
+   "at_10k": [
+    -105487.64090411772,
+    -106780.14346580628,
+    -107547.27782152669,
+    -107526.76320815476,
+    -107573.70101487325
+   ],
+   "final": [
+    -81346.64182173666,
+    -81337.87150793463,
+    -81359.59205679246,
+    -81323.85025623713,
+    -81341.91352194088
+   ],
+   "rel_change_10k_to_50k": [
+    0.22885144530176632,
+    0.23826781957844917,
+    0.2434992897560118,
+    0.24368735903630756,
+    0.24384944689506907
+   ]
+  }
+ },
+ "summary": {
+  "on_policy_max_rel_diff_to_no_dosing_tests_1_2_4": 0.30913735135084897,
+  "on_policy_max_abs_diff_test_3": 10597.951029671089,
+  "on_policy_runs_identical_to_no_dosing": 7,
+  "off_policy_runs_exact_constant_corner": 4,
+  "off_policy_runs_with_archived_actions": 60,
+  "off_policy_archived_runs_with_every_action_at_a_corner": 5,
+  "off_policy_runs_worse_than_no_dosing_test2": 0,
+  "model3_model4_td3_identical": false,
+  "runs_below_constant_half_dose_on_test2": 62,
+  "runs_with_change_below_1pct_10k_to_50k": 4,
+  "runs_with_change_below_5pct_10k_to_50k": 10
+ }
+}

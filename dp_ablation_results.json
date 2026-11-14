@@ -1,67 +1,979 @@
-[
-  {
-    "grid_points_per_dim": 10,
-    "total_states": 10000,
-    "memory_mb": 4.81,
-    "vectorized_runtime_s": 0.44,
-    "serial_solve_ivp_est_s": 6161.5,
-    "test1_reward_mean": -1463056.2757210524,
-    "test1_reward_sd": 33904.02686319501,
-    "test1_burden_mean": 0.07233485607944148,
-    "test2_reward": -1442529.2858429074,
-    "test2_burden": 0.06913724097846342,
-    "test2_steps": 46
+{
+  "linear_grid": [
+    {
+      "grid_type": "linear",
+      "grid_points_per_dim": 10,
+      "total_states": 10000,
+      "peak_measured_ram_mb": 5.71,
+      "memory_mb": 5.71,
+      "memory_sweep_formula_mb": 4.81,
+      "policy_float64_pair_mb": 0.153,
+      "policy_int8_kb": 9.77,
+      "vectorized_runtime_s": 0.87,
+      "serial_solve_ivp_est_s": 6161.5,
+      "test1_reward_mean": -1439332.1017904081,
+      "test1_reward_sd": 11657.131177468846,
+      "test1_burden_mean": 0.06985175314846928,
+      "test2_reward": -1442529.285842906,
+      "test2_burden": 0.06913724097846334,
+      "test2_steps": 46,
+      "test2_shortfall_pct": 25.48,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1430111.610076607,
+            -1426505.7763384823,
+            -1452222.3711046572,
+            -1437355.129350076,
+            -1450465.622082219
+          ],
+          "reward_mean": -1439332.1017904081,
+          "reward_sd": 11657.131177468846,
+          "burden_mean": 0.06985175314846928,
+          "steps_mean": 46.0
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1442529.285842906,
+            -1442529.285842906,
+            -1442529.285842906,
+            -1442529.285842906,
+            -1442529.285842906
+          ],
+          "reward_mean": -1442529.285842906,
+          "reward_sd": 0.0,
+          "burden_mean": 0.06913724097846334,
+          "steps_mean": 46.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -5.444758812846296,
+            -6.355800821667544,
+            -6.2168627595987145,
+            -5.265529671368819,
+            -5.950544031238069
+          ],
+          "reward_mean": -5.846699219343888,
+          "reward_sd": 0.4759998337312823,
+          "burden_mean": 0.0040849485081905085,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -79693.16601110117,
+            -77277.93628827529,
+            -83246.0782186008,
+            -81717.49977233735,
+            -83378.14605398093
+          ],
+          "reward_mean": -81062.5652688591,
+          "reward_sd": 2586.370682335783,
+          "burden_mean": 0.05904407839086061,
+          "steps_mean": 20.939999999999998
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -2938515.807987381,
+            -2933055.5702825235,
+            -2944749.70333779,
+            -2908339.240051587,
+            -2889627.9417414544
+          ],
+          "reward_mean": -2922857.6526801474,
+          "reward_sd": 23148.624296971262,
+          "burden_mean": 0.0854227848486799,
+          "steps_mean": 50.6
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -2779068.9451469276,
+            -2754552.18178096,
+            -2764090.8112950856,
+            -2798805.792822782,
+            -2790777.3814812596
+          ],
+          "reward_mean": -2777459.0225054035,
+          "reward_sd": 18296.77268429506,
+          "burden_mean": 0.06588501602027522,
+          "steps_mean": 39.12
+        }
+      }
+    },
+    {
+      "grid_type": "linear",
+      "grid_points_per_dim": 15,
+      "total_states": 50625,
+      "peak_measured_ram_mb": 28.76,
+      "memory_mb": 28.76,
+      "memory_sweep_formula_mb": 24.33,
+      "policy_float64_pair_mb": 0.772,
+      "policy_int8_kb": 49.44,
+      "vectorized_runtime_s": 3.74,
+      "serial_solve_ivp_est_s": 31192.6,
+      "test1_reward_mean": -1366757.2710869845,
+      "test1_reward_sd": 9560.382777840208,
+      "test1_burden_mean": 0.08207548358338879,
+      "test2_reward": -1359942.6702418204,
+      "test2_burden": 0.09910506759055056,
+      "test2_steps": 45,
+      "test2_shortfall_pct": 18.3,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1355978.653447385,
+            -1359192.3252078407,
+            -1375832.7181179163,
+            -1365608.4260534195,
+            -1377174.232608361
+          ],
+          "reward_mean": -1366757.2710869845,
+          "reward_sd": 9560.382777840208,
+          "burden_mean": 0.08207548358338879,
+          "steps_mean": 45.440000000000005
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1359942.6702418204,
+            -1359942.6702418204,
+            -1359942.6702418204,
+            -1359942.6702418204,
+            -1359942.6702418204
+          ],
+          "reward_mean": -1359942.6702418204,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09910506759055056,
+          "steps_mean": 45.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -5.444758812846296,
+            -6.355800821667544,
+            -6.2168627595987145,
+            -5.265529671368819,
+            -5.950544031238069
+          ],
+          "reward_mean": -5.846699219343888,
+          "reward_sd": 0.4759998337312823,
+          "burden_mean": 0.0040849485081905085,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -79816.816591793,
+            -77401.62619403556,
+            -83369.67679833504,
+            -81841.11919709455,
+            -83501.74312910537
+          ],
+          "reward_mean": -81186.1963820727,
+          "reward_sd": 2586.331372704241,
+          "burden_mean": 0.05904184849113148,
+          "steps_mean": 20.939999999999998
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -2283052.7078239466,
+            -2315901.1372308442,
+            -2310353.918961986,
+            -2321429.9787243805,
+            -2308935.7345093167
+          ],
+          "reward_mean": -2307934.6954500945,
+          "reward_sd": 14761.054290985216,
+          "burden_mean": 0.06934098237573048,
+          "steps_mean": 49.279999999999994
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -2250583.7249493063,
+            -2247218.7590988083,
+            -2238707.722954751,
+            -2228656.905600964,
+            -2201869.0775511507
+          ],
+          "reward_mean": -2233407.238030996,
+          "reward_sd": 19564.67596292328,
+          "burden_mean": 0.0647056477665376,
+          "steps_mean": 39.0
+        }
+      }
+    },
+    {
+      "grid_type": "linear",
+      "grid_points_per_dim": 20,
+      "total_states": 160000,
+      "peak_measured_ram_mb": 90.83,
+      "memory_mb": 90.83,
+      "memory_sweep_formula_mb": 76.9,
+      "policy_float64_pair_mb": 2.441,
+      "policy_int8_kb": 156.25,
+      "vectorized_runtime_s": 12.94,
+      "serial_solve_ivp_est_s": 98584.0,
+      "test1_reward_mean": -1314003.9055658006,
+      "test1_reward_sd": 9123.711219471546,
+      "test1_burden_mean": 0.08446432146671479,
+      "test2_reward": -1319462.3343224043,
+      "test2_burden": 0.09111971268677024,
+      "test2_steps": 45,
+      "test2_shortfall_pct": 14.77,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1307919.4446391335,
+            -1301619.2164259793,
+            -1321531.5626541846,
+            -1315866.0872243536,
+            -1323083.2168853527
+          ],
+          "reward_mean": -1314003.9055658006,
+          "reward_sd": 9123.711219471546,
+          "burden_mean": 0.08446432146671479,
+          "steps_mean": 45.160000000000004
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1319462.3343224043,
+            -1319462.3343224043,
+            -1319462.3343224043,
+            -1319462.3343224043,
+            -1319462.3343224043
+          ],
+          "reward_mean": -1319462.3343224043,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09111971268677024,
+          "steps_mean": 45.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -5.444758812846296,
+            -6.355800821667544,
+            -6.2168627595987145,
+            -5.265529671368819,
+            -5.950544031238069
+          ],
+          "reward_mean": -5.846699219343888,
+          "reward_sd": 0.4759998337312823,
+          "burden_mean": 0.0040849485081905085,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -79940.70055504321,
+            -77525.54327355017,
+            -83493.51521141437,
+            -81964.97583427935,
+            -83625.5797481957
+          ],
+          "reward_mean": -81310.06292449657,
+          "reward_sd": 2586.2973174383314,
+          "burden_mean": 0.05904078641414068,
+          "steps_mean": 20.939999999999998
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -2030256.1217614054,
+            -2011696.1591283388,
+            -2020453.2862092585,
+            -2029101.8348831136,
+            -2035331.6218358974
+          ],
+          "reward_mean": -2025367.8047636026,
+          "reward_sd": 9329.826655032204,
+          "burden_mean": 0.08623050122576201,
+          "steps_mean": 47.96
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1920991.529716719,
+            -1920973.9846983769,
+            -1925328.6163800347,
+            -1930505.6939433888,
+            -1926839.5537412749
+          ],
+          "reward_mean": -1924927.8756959587,
+          "reward_sd": 4063.718621386608,
+          "burden_mean": 0.06658470471668856,
+          "steps_mean": 39.12
+        }
+      }
+    },
+    {
+      "grid_type": "linear",
+      "grid_points_per_dim": 30,
+      "total_states": 810000,
+      "peak_measured_ram_mb": 459.66,
+      "memory_mb": 459.66,
+      "memory_sweep_formula_mb": 389.33,
+      "policy_float64_pair_mb": 12.36,
+      "policy_int8_kb": 791.02,
+      "vectorized_runtime_s": 93.79,
+      "serial_solve_ivp_est_s": 499081.5,
+      "test1_reward_mean": -1240080.7801045734,
+      "test1_reward_sd": 10095.194288042016,
+      "test1_burden_mean": 0.07920401338248169,
+      "test2_reward": -1237373.5368860555,
+      "test2_burden": 0.0778993912742327,
+      "test2_steps": 45,
+      "test2_shortfall_pct": 7.63,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1232801.4538972327,
+            -1227992.0134162498,
+            -1251117.5493714646,
+            -1239146.972916142,
+            -1249345.9109217774
+          ],
+          "reward_mean": -1240080.7801045734,
+          "reward_sd": 10095.194288042016,
+          "burden_mean": 0.07920401338248169,
+          "steps_mean": 45.0
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1237373.5368860555,
+            -1237373.5368860555,
+            -1237373.5368860555,
+            -1237373.5368860555,
+            -1237373.5368860555
+          ],
+          "reward_mean": -1237373.5368860555,
+          "reward_sd": 0.0,
+          "burden_mean": 0.0778993912742327,
+          "steps_mean": 45.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -1380.340398629815,
+            -1381.2347889306877,
+            -1381.099100205992,
+            -1380.164556938327,
+            -1380.8369922459547
+          ],
+          "reward_mean": -1380.7351673901553,
+          "reward_sd": 0.4674066060032253,
+          "burden_mean": 0.003816200135070345,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -80478.27879536182,
+            -78109.97215495235,
+            -83872.49146382269,
+            -82441.52051837268,
+            -84001.15943607748
+          ],
+          "reward_mean": -81780.6844737174,
+          "reward_sd": 2495.6591964039926,
+          "burden_mean": 0.06216896981319666,
+          "steps_mean": 20.82
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1704132.6725442181,
+            -1691502.5693645566,
+            -1715139.8029716269,
+            -1713262.3692198873,
+            -1719081.221277088
+          ],
+          "reward_mean": -1708623.7270754755,
+          "reward_sd": 11029.948358559544,
+          "burden_mean": 0.08028617291686545,
+          "steps_mean": 47.0
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1634145.8018135293,
+            -1624462.4731784253,
+            -1647333.6148098146,
+            -1637799.4374021809,
+            -1641533.992467374
+          ],
+          "reward_mean": -1637055.0639342647,
+          "reward_sd": 8563.011281040437,
+          "burden_mean": 0.07419337974256995,
+          "steps_mean": 39.44
+        }
+      }
+    },
+    {
+      "grid_type": "linear",
+      "grid_points_per_dim": 50,
+      "total_states": 6250000,
+      "peak_measured_ram_mb": 3546.52,
+      "memory_mb": 3546.52,
+      "memory_sweep_formula_mb": 3004.07,
+      "policy_float64_pair_mb": 95.367,
+      "policy_int8_kb": 6103.52,
+      "vectorized_runtime_s": 1152.9,
+      "serial_solve_ivp_est_s": 3850937.5,
+      "test1_reward_mean": -1206854.206008146,
+      "test1_reward_sd": 8680.248474112974,
+      "test1_burden_mean": 0.0724685549023571,
+      "test2_reward": -1211746.4705371102,
+      "test2_burden": 0.07299471333854522,
+      "test2_steps": 45,
+      "test2_shortfall_pct": 5.41,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1202460.239494115,
+            -1194878.621476295,
+            -1215982.5889378572,
+            -1206658.9903513181,
+            -1214290.5897811444
+          ],
+          "reward_mean": -1206854.206008146,
+          "reward_sd": 8680.248474112974,
+          "burden_mean": 0.0724685549023571,
+          "steps_mean": 45.0
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1211746.4705371102,
+            -1211746.4705371102,
+            -1211746.4705371102,
+            -1211746.4705371102,
+            -1211746.4705371102
+          ],
+          "reward_mean": -1211746.4705371102,
+          "reward_sd": 0.0,
+          "burden_mean": 0.07299471333854522,
+          "steps_mean": 45.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -1380.340398629815,
+            -1381.2347889306877,
+            -1381.099100205992,
+            -1380.164556938327,
+            -1380.8369922459547
+          ],
+          "reward_mean": -1380.7351673901553,
+          "reward_sd": 0.4674066060032253,
+          "burden_mean": 0.003816200135070345,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -83256.1086362373,
+            -79385.2361715296,
+            -87074.70880257357,
+            -85610.74882438914,
+            -86768.00311692132
+          ],
+          "reward_mean": -84418.96111033019,
+          "reward_sd": 3189.120754415492,
+          "burden_mean": 0.062029828858056524,
+          "steps_mean": 20.82
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1604056.2299568355,
+            -1598519.584754134,
+            -1614719.1528493303,
+            -1615579.0812392398,
+            -1598820.2155943965
+          ],
+          "reward_mean": -1606338.852878787,
+          "reward_sd": 8344.046916407886,
+          "burden_mean": 0.07536871860396016,
+          "steps_mean": 46.74
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1534971.2710468543,
+            -1522923.6208481074,
+            -1540852.1695373768,
+            -1538533.9519311606,
+            -1541755.3984123678
+          ],
+          "reward_mean": -1535807.2823551733,
+          "reward_sd": 7664.093994464069,
+          "burden_mean": 0.06908849514331064,
+          "steps_mean": 39.839999999999996
+        }
+      }
+    }
+  ],
+  "log_grid": [
+    {
+      "grid_type": "log_spaced",
+      "grid_points_per_dim": 10,
+      "total_states": 10000,
+      "sweeps": 90,
+      "peak_measured_ram_mb": 15.45,
+      "policy_int8_kb": 9.77,
+      "value_float64_mb": 0.076,
+      "vectorized_runtime_s": 1.05,
+      "test1_reward_mean": -1152587.5021672926,
+      "test1_reward_sd": 9609.164073838796,
+      "test1_burden_mean": 0.08470153827430679,
+      "test2_reward": -1154111.0041789352,
+      "test2_burden": 0.09521860429194093,
+      "test2_steps": 44,
+      "test2_shortfall_pct": 0.39,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1146557.644542089,
+            -1139574.8427976314,
+            -1161722.6497981215,
+            -1153596.1428795948,
+            -1161486.2308190274
+          ],
+          "reward_mean": -1152587.5021672926,
+          "reward_sd": 9609.164073838796,
+          "burden_mean": 0.08470153827430679,
+          "steps_mean": 44.260000000000005
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1154111.0041789352,
+            -1154111.0041789352,
+            -1154111.0041789352,
+            -1154111.0041789352,
+            -1154111.0041789352
+          ],
+          "reward_mean": -1154111.0041789352,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09521860429194093,
+          "steps_mean": 44.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -10630.237850410398,
+            -10631.115818972286,
+            -10630.983307126447,
+            -10630.065336742355,
+            -10630.725369508773
+          ],
+          "reward_mean": -10630.625536552052,
+          "reward_sd": 0.45893017605002323,
+          "burden_mean": 0.003406809964826176,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -87474.93864078293,
+            -85150.41848189151,
+            -90732.88057563711,
+            -89384.24556911089,
+            -90858.57179810134
+          ],
+          "reward_mean": -88720.21101310477,
+          "reward_sd": 2416.5310624684507,
+          "burden_mean": 0.06838930819055408,
+          "steps_mean": 20.64
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1450541.3215369391,
+            -1437507.2441982045,
+            -1464095.5623509376,
+            -1460180.015088869,
+            -1464502.170823022
+          ],
+          "reward_mean": -1455365.2627995943,
+          "reward_sd": 11457.118919747796,
+          "burden_mean": 0.07304830763433434,
+          "steps_mean": 46.0
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1391277.9255398123,
+            -1381986.1072210376,
+            -1404522.185397982,
+            -1398223.498785249,
+            -1403900.1409441044
+          ],
+          "reward_mean": -1395981.9715776371,
+          "reward_sd": 9469.284168431646,
+          "burden_mean": 0.07758313153624634,
+          "steps_mean": 40.17999999999999
+        }
+      }
+    },
+    {
+      "grid_type": "log_spaced",
+      "grid_points_per_dim": 15,
+      "total_states": 50625,
+      "sweeps": 90,
+      "peak_measured_ram_mb": 77.86,
+      "policy_int8_kb": 49.44,
+      "value_float64_mb": 0.386,
+      "vectorized_runtime_s": 4.4,
+      "test1_reward_mean": -1150268.5293010983,
+      "test1_reward_sd": 9557.205731629856,
+      "test1_burden_mean": 0.08462261293661613,
+      "test2_reward": -1151815.552924648,
+      "test2_burden": 0.09780090936928564,
+      "test2_steps": 44,
+      "test2_shortfall_pct": 0.19,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1144273.4575081796,
+            -1137376.7518999316,
+            -1159274.611193894,
+            -1151128.6174396242,
+            -1159289.208463863
+          ],
+          "reward_mean": -1150268.5293010983,
+          "reward_sd": 9557.205731629856,
+          "burden_mean": 0.08462261293661613,
+          "steps_mean": 44.32000000000001
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1151815.552924648,
+            -1151815.552924648,
+            -1151815.552924648,
+            -1151815.552924648,
+            -1151815.552924648
+          ],
+          "reward_mean": -1151815.552924648,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09780090936928564,
+          "steps_mean": 44.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -10630.237850410398,
+            -10631.115818972286,
+            -10630.983307126447,
+            -10630.065336742355,
+            -10630.725369508773
+          ],
+          "reward_mean": -10630.625536552052,
+          "reward_sd": 0.45893017605002323,
+          "burden_mean": 0.003406809964826176,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -87337.89990136772,
+            -85025.79665088808,
+            -90608.29460866426,
+            -89259.64923923931,
+            -90733.9866863749
+          ],
+          "reward_mean": -88593.12541730686,
+          "reward_sd": 2418.153917349904,
+          "burden_mean": 0.06839275039059153,
+          "steps_mean": 20.64
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1449067.293632399,
+            -1436081.5094711406,
+            -1462509.6206290124,
+            -1458633.169762206,
+            -1462939.6804279448
+          ],
+          "reward_mean": -1453846.2547845405,
+          "reward_sd": 11391.702006661735,
+          "burden_mean": 0.07473255508020435,
+          "steps_mean": 46.0
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1389135.0251938268,
+            -1379837.5874286066,
+            -1402475.597941481,
+            -1396355.2193438285,
+            -1401985.8926858034
+          ],
+          "reward_mean": -1393957.8645187092,
+          "reward_sd": 9557.592967446011,
+          "burden_mean": 0.07818785680759545,
+          "steps_mean": 40.17999999999999
+        }
+      }
+    },
+    {
+      "grid_type": "log_spaced",
+      "grid_points_per_dim": 20,
+      "total_states": 160000,
+      "sweeps": 90,
+      "peak_measured_ram_mb": 245.9,
+      "policy_int8_kb": 156.25,
+      "value_float64_mb": 1.221,
+      "vectorized_runtime_s": 20.0,
+      "test1_reward_mean": -1148973.6480945095,
+      "test1_reward_sd": 9561.0046095685,
+      "test1_burden_mean": 0.08431433852933883,
+      "test2_reward": -1150432.6107827942,
+      "test2_burden": 0.09829725321922683,
+      "test2_steps": 44,
+      "test2_shortfall_pct": 0.07,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1142878.3166762064,
+            -1136152.4266343112,
+            -1157994.228302344,
+            -1149811.9843893233,
+            -1158031.2844703628
+          ],
+          "reward_mean": -1148973.6480945095,
+          "reward_sd": 9561.0046095685,
+          "burden_mean": 0.08431433852933883,
+          "steps_mean": 44.339999999999996
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1150432.6107827942,
+            -1150432.6107827942,
+            -1150432.6107827942,
+            -1150432.6107827942,
+            -1150432.6107827942
+          ],
+          "reward_mean": -1150432.6107827942,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09829725321922683,
+          "steps_mean": 44.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -10505.237850301028,
+            -10506.11581889339,
+            -10505.983307043041,
+            -10505.065336637146,
+            -10505.72536942797
+          ],
+          "reward_mean": -10505.625536460515,
+          "reward_sd": 0.4589301895326661,
+          "burden_mean": 0.0034067184287118976,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -87350.33039050786,
+            -85025.79665088808,
+            -90608.29460866426,
+            -89259.64923923931,
+            -90733.9866863749
+          ],
+          "reward_mean": -88595.61151513488,
+          "reward_sd": 2416.546655422689,
+          "burden_mean": 0.06839266364571131,
+          "steps_mean": 20.64
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1449054.42184581,
+            -1436155.016187563,
+            -1462388.0389860997,
+            -1458546.4502998763,
+            -1462868.059241965
+          ],
+          "reward_mean": -1453802.397312263,
+          "reward_sd": 11317.893349856511,
+          "burden_mean": 0.07435011429536977,
+          "steps_mean": 46.0
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1389236.0353764312,
+            -1379958.6734875056,
+            -1402451.2664460687,
+            -1396548.4976017203,
+            -1402413.8105793209
+          ],
+          "reward_mean": -1394121.6566982095,
+          "reward_sd": 9598.061789198742,
+          "burden_mean": 0.0778157685011976,
+          "steps_mean": 40.17999999999999
+        }
+      }
+    },
+    {
+      "grid_type": "log_spaced",
+      "grid_points_per_dim": 30,
+      "total_states": 810000,
+      "sweeps": 90,
+      "peak_measured_ram_mb": 1244.54,
+      "policy_int8_kb": 791.02,
+      "value_float64_mb": 6.18,
+      "vectorized_runtime_s": 156.28,
+      "test1_reward_mean": -1149033.5924157402,
+      "test1_reward_sd": 9599.13874752381,
+      "test1_burden_mean": 0.08356420785188613,
+      "test2_reward": -1150492.435607441,
+      "test2_burden": 0.09857384603959386,
+      "test2_steps": 44,
+      "test2_shortfall_pct": 0.08,
+      "all_tests": {
+        "Test 1 (Reduced, Default, Noise)": {
+          "seed_rewards": [
+            -1142952.1212903778,
+            -1136124.634172451,
+            -1158104.9418002686,
+            -1149902.599968172,
+            -1158083.6648474329
+          ],
+          "reward_mean": -1149033.5924157402,
+          "reward_sd": 9599.13874752381,
+          "burden_mean": 0.08356420785188613,
+          "steps_mean": 44.36
+        },
+        "Test 2 (Reduced, Default, No Noise)": {
+          "seed_rewards": [
+            -1150492.435607441,
+            -1150492.435607441,
+            -1150492.435607441,
+            -1150492.435607441,
+            -1150492.435607441
+          ],
+          "reward_mean": -1150492.435607441,
+          "reward_sd": 0.0,
+          "burden_mean": 0.09857384603959386,
+          "steps_mean": 44.0
+        },
+        "Test 3 (Full, Modified, Noise)": {
+          "seed_rewards": [
+            -6755.237913563503,
+            -7131.115890962251,
+            -7505.983347074363,
+            -6755.0653984924775,
+            -7130.725424620048
+          ],
+          "reward_mean": -7055.625594942528,
+          "reward_sd": 314.13773449330205,
+          "burden_mean": 0.0034652004412585244,
+          "steps_mean": 2.0
+        },
+        "Test 4 (Full, Modified, Zero-Lysis Control)": {
+          "seed_rewards": [
+            -87350.33039050786,
+            -85025.79665088808,
+            -90608.29460866426,
+            -89259.64923923931,
+            -90733.9866863749
+          ],
+          "reward_mean": -88595.61151513488,
+          "reward_sd": 2416.546655422689,
+          "burden_mean": 0.06839266364571131,
+          "steps_mean": 20.64
+        },
+        "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1448941.7865607126,
+            -1435940.1243990064,
+            -1462358.194175568,
+            -1458473.7350982833,
+            -1462785.673980139
+          ],
+          "reward_mean": -1453699.902842742,
+          "reward_sd": 11383.717772472015,
+          "burden_mean": 0.07406381620093239,
+          "steps_mean": 46.0
+        },
+        "Test 6 (Full Coupled, Virus-Free, Noise)": {
+          "seed_rewards": [
+            -1388635.6734469074,
+            -1379182.2794333748,
+            -1401722.431264957,
+            -1395772.7769830716,
+            -1401489.2926093151
+          ],
+          "reward_mean": -1393360.4907475251,
+          "reward_sd": 9554.634587471586,
+          "burden_mean": 0.07784510420849207,
+          "steps_mean": 40.17999999999999
+        }
+      }
+    }
+  ],
+  "log_grid_modified_20": {
+    "seconds": 19.23,
+    "sweeps": 90,
+    "policy_int8_kb": 156.25,
+    "all_tests": {
+      "Test 1 (Reduced, Default, Noise)": {
+        "seed_rewards": [
+          -1370184.4556617062,
+          -1363258.3917075056,
+          -1382343.8893360617,
+          -1373463.3332933115,
+          -1378672.767782925
+        ],
+        "reward_mean": -1373584.5675563018,
+        "reward_sd": 7430.021296909911,
+        "burden_mean": 0.08455541226092028,
+        "steps_mean": 45.14
+      },
+      "Test 2 (Reduced, Default, No Noise)": {
+        "seed_rewards": [
+          -1375440.9374894672,
+          -1375440.9374894672,
+          -1375440.9374894672,
+          -1375440.9374894672,
+          -1375440.9374894672
+        ],
+        "reward_mean": -1375440.9374894672,
+        "reward_sd": 0.0,
+        "burden_mean": 0.08970200819580268,
+        "steps_mean": 45.0
+      },
+      "Test 3 (Full, Modified, Noise)": {
+        "seed_rewards": [
+          -1255.3404791246014,
+          -1256.234882917325,
+          -1256.0991921248176,
+          -1255.1646348002882,
+          -1255.8370802287914
+        ],
+        "reward_mean": -1255.735253839165,
+        "reward_sd": 0.4674136465483389,
+        "burden_mean": 0.003816404540747978,
+        "steps_mean": 2.0
+      },
+      "Test 4 (Full, Modified, Zero-Lysis Control)": {
+        "seed_rewards": [
+          -79030.21796334101,
+          -76657.81066543554,
+          -82438.52290213446,
+          -80998.84752640362,
+          -82567.4944721009
+        ],
+        "reward_mean": -80338.57870588309,
+        "reward_sd": 2503.679653820605,
+        "burden_mean": 0.06142225607794878,
+        "steps_mean": 20.84
+      },
+      "Test 5 (Reduced, Default, Virus-Free, Noise)": {
+        "seed_rewards": [
+          -1641105.300497908,
+          -1628995.1150362922,
+          -1653150.2213324294,
+          -1648021.1975019327,
+          -1649266.2167014494
+        ],
+        "reward_mean": -1644107.6102140024,
+        "reward_sd": 9501.28381219281,
+        "burden_mean": 0.08369452775174427,
+        "steps_mean": 46.17999999999999
+      },
+      "Test 6 (Full Coupled, Virus-Free, Noise)": {
+        "seed_rewards": [
+          -1587076.9846879265,
+          -1581651.9790991028,
+          -1600769.7539449618,
+          -1594846.3337422037,
+          -1602783.51333765
+        ],
+        "reward_mean": -1593425.712962369,
+        "reward_sd": 8978.428161480155,
+        "burden_mean": 0.07341693303446153,
+        "steps_mean": 38.2
+      }
+    }
   },
-  {
-    "grid_points_per_dim": 15,
-    "total_states": 50625,
-    "memory_mb": 24.33,
-    "vectorized_runtime_s": 2.57,
-    "serial_solve_ivp_est_s": 31192.6,
-    "test1_reward_mean": -1383049.9294564794,
-    "test1_reward_sd": 17931.808432563204,
-    "test1_burden_mean": 0.07013081666815704,
-    "test2_reward": -1359942.6702418197,
-    "test2_burden": 0.09910506759055049,
-    "test2_steps": 45
-  },
-  {
-    "grid_points_per_dim": 20,
-    "total_states": 160000,
-    "memory_mb": 76.9,
-    "vectorized_runtime_s": 9.52,
-    "serial_solve_ivp_est_s": 98584.0,
-    "test1_reward_mean": -1334707.7234052229,
-    "test1_reward_sd": 28962.648048263825,
-    "test1_burden_mean": 0.0943840218836252,
-    "test2_reward": -1319462.3343224037,
-    "test2_burden": 0.0911197126867702,
-    "test2_steps": 45
-  },
-  {
-    "grid_points_per_dim": 30,
-    "total_states": 810000,
-    "memory_mb": 389.33,
-    "vectorized_runtime_s": 69.9,
-    "serial_solve_ivp_est_s": 499081.5,
-    "test1_reward_mean": -1254009.4924972241,
-    "test1_reward_sd": 22083.30026090642,
-    "test1_burden_mean": 0.08065024601711841,
-    "test2_reward": -1237373.5368860562,
-    "test2_burden": 0.07789939127423262,
-    "test2_steps": 45
-  },
-  {
-    "grid_points_per_dim": 50,
-    "total_states": 6250000,
-    "memory_mb": 3004.07,
-    "vectorized_runtime_s": 881.09,
-    "serial_solve_ivp_est_s": 3850937.5,
-    "test1_reward_mean": -1219547.9654447874,
-    "test1_reward_sd": 23730.303706706454,
-    "test1_burden_mean": 0.07366120015709042,
-    "test2_reward": -1211746.4705371102,
-    "test2_burden": 0.07299471333854514,
-    "test2_steps": 45
+  "references_test2": {
+    "numerical_optimum": -1149609.811058751,
+    "two_stage_open_loop": -1165143.4545115074,
+    "constant_half_dose": -1318720.6144492931
   }
-]
+}

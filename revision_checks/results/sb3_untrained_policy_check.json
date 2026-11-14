@@ -1,0 +1,1762 @@
+[
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "PPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 506.7681832814818,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309463.862698235,
+   "Test 2 (Reduced, Default, No Noise)": -1318930.237725919,
+   "Test 3 (Full, Modified, Noise)": -2764.6752908048015,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106384.70259018538,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861366.0045657903,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760536.8073390475
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1490345.2545060492,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.444758812846296,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79693.16601110117,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -378080566.5293538,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196868041.20778948
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "PPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 433.7477059347121,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302874.7544118802,
+   "Test 2 (Reduced, Default, No Noise)": -1318735.32615288,
+   "Test 3 (Full, Modified, Noise)": -2763.1698265979226,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103659.54303691545,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845024.2788296875,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1748962.024743076
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1486774.272911983,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -6.355800821667544,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77277.93628827529,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -13972846.549239535,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -194421783.47208518
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "PPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 443.0728862937824,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327381.9791702053,
+   "Test 2 (Reduced, Default, No Noise)": -1318708.8244551616,
+   "Test 3 (Full, Modified, Noise)": -2760.74018934733,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109961.23763332274,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877063.1140858494,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1776497.2308961179
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1514490.2967453047,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -6.2168627595987145,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83246.0782186008,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -378210133.5644766,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196957731.38287506
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "PPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 521.2994273357621,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316896.7483597458,
+   "Test 2 (Reduced, Default, No Noise)": -1318896.2800901642,
+   "Test 3 (Full, Modified, Noise)": -2750.1831319753974,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108253.49346021746,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873288.0601594062,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769303.1655698519
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1498202.3667268844,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.265529671368819,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81717.49977233735,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -378173232.5636052,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196839566.85804373
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "PPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 463.10133475040095,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327140.5396194712,
+   "Test 2 (Reduced, Default, No Noise)": -1318679.717263856,
+   "Test 3 (Full, Modified, Noise)": -2761.6554273886195,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109818.10761244448,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877836.4327019546,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1776177.501825443
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1514311.6804815994,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.950544031238069,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83378.14605398093,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -378211004.8996598,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196936900.03379375
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 506.7681832814818,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309463.862698235,
+   "Test 2 (Reduced, Default, No Noise)": -1318930.237725919,
+   "Test 3 (Full, Modified, Noise)": -2764.6752908048015,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106384.70259018538,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861366.0045657903,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760536.8073390475
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1479034.4965613806,
+   "Test 2 (Reduced, Default, No Noise)": -1491891.9900512006,
+   "Test 3 (Full, Modified, Noise)": -5.444758812846296,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79809.90119396754,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -377107970.19637334,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196480019.7380296
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 433.7477059347121,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302874.7544118802,
+   "Test 2 (Reduced, Default, No Noise)": -1318735.32615288,
+   "Test 3 (Full, Modified, Noise)": -2763.1698265979226,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103659.54303691545,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845024.2788296875,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1748962.024743076
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1391426.8990645944,
+   "Test 2 (Reduced, Default, No Noise)": -1407169.3880805483,
+   "Test 3 (Full, Modified, Noise)": -6.355800821667544,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77277.93666919468,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1973206.4847068477,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1937382.609361317
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 443.0728862937824,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327381.9791702053,
+   "Test 2 (Reduced, Default, No Noise)": -1318708.8244551616,
+   "Test 3 (Full, Modified, Noise)": -2760.74018934733,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109961.23763332274,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877063.1140858494,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1776497.2308961179
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1480421.0138229397,
+   "Test 2 (Reduced, Default, No Noise)": -1470156.8744681107,
+   "Test 3 (Full, Modified, Noise)": -6.2168627595987145,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83246.0782186008,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2103284.4244866525,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2038484.334811046
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 521.2994273357621,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316896.7483597458,
+   "Test 2 (Reduced, Default, No Noise)": -1318896.2800901642,
+   "Test 3 (Full, Modified, Noise)": -2750.1831319753974,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108253.49346021746,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873288.0601594062,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769303.1655698519
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1498202.3667268844,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.265529671368819,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81717.49977233735,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -377248035.84962416,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196675405.64517188
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 463.10133475040095,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327140.5396194712,
+   "Test 2 (Reduced, Default, No Noise)": -1318679.717263856,
+   "Test 3 (Full, Modified, Noise)": -2761.6554273886195,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109818.10761244448,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877836.4327019546,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1776177.501825443
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1514311.6804815994,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.950544031238069,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83378.14605398093,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3069974.422238926,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2926570.3548924895
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TD3",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 466.1664828025759,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1314978.1560704703,
+   "Test 2 (Reduced, Default, No Noise)": -1324562.2539145588,
+   "Test 3 (Full, Modified, Noise)": -2543.608824305733,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -104702.96212631314,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1888338.0224911764,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1785145.6767394696
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1490345.2545060492,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.909504544,
+   "Test 3 (Full, Modified, Noise)": -5.444758812846296,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79693.16601110117,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -18891665.753288947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -17143878.02443614
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TD3",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 411.9882034524709,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1305776.2002360618,
+   "Test 2 (Reduced, Default, No Noise)": -1321688.9923338385,
+   "Test 3 (Full, Modified, Noise)": -2624.870762842395,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -99983.92457782573,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1859344.9873028148,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1765641.1108931638
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1486774.2717934474,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.9083458376,
+   "Test 3 (Full, Modified, Noise)": -6.355800821667975,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77277.93628827529,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -18490035.864209548,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -16735358.920565536
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TD3",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 349.17764625621743,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1335790.463307046,
+   "Test 2 (Reduced, Default, No Noise)": -1326673.617362698,
+   "Test 3 (Full, Modified, Noise)": -2177.0063682542104,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -104802.77194581449,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1944223.0541674704,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1839870.8537649922
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1514490.2967420332,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.9095012427,
+   "Test 3 (Full, Modified, Noise)": -6.2168627595987145,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83246.0782186008,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -18572963.15354038,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -16799234.469886173
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TD3",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 537.6970873942927,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1314758.6322513553,
+   "Test 2 (Reduced, Default, No Noise)": -1316736.876233242,
+   "Test 3 (Full, Modified, Noise)": -2836.5254975567545,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108706.08685399531,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861612.3845054067,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1758781.3582468224
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1498202.36672686,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.9095045186,
+   "Test 3 (Full, Modified, Noise)": -5.2655296713728,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81717.49977233735,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -19522317.243740983,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -17436886.817002483
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "TD3",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 594.4626429862615,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320903.961818067,
+   "Test 2 (Reduced, Default, No Noise)": -1312863.0489915733,
+   "Test 3 (Full, Modified, Noise)": -3543.326676047144,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -117546.12390682046,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1826976.2519859117,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1725854.5160078958
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1514311.6470624087,
+   "Test 2 (Reduced, Default, No Noise)": -1503322.8766431448,
+   "Test 3 (Full, Modified, Noise)": -5.950544031238069,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83378.14605398093,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -17698593.450592842,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -16080682.386646938
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "SAC",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 92.21979509817258,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1314978.1560704703,
+   "Test 2 (Reduced, Default, No Noise)": -1324562.2539145588,
+   "Test 3 (Full, Modified, Noise)": -2543.608824305733,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -104702.96212631314,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1888338.0224911764,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1785145.6767394696
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1457841.4059832268,
+   "Test 2 (Reduced, Default, No Noise)": -1470317.3789210143,
+   "Test 3 (Full, Modified, Noise)": -27.286144768146954,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79685.3771363291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3526134.2887158976,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3366968.2815877357
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "SAC",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 90.29402871767309,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1305776.2002360618,
+   "Test 2 (Reduced, Default, No Noise)": -1321688.9923338385,
+   "Test 3 (Full, Modified, Noise)": -2624.870762842395,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -99983.92457782573,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1859344.9873028148,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1765641.1108931638
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1455613.6813846745,
+   "Test 2 (Reduced, Default, No Noise)": -1472050.8760160531,
+   "Test 3 (Full, Modified, Noise)": -28.751834043383184,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77278.94656868251,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3526885.097962942,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3371163.8173685
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "SAC",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 78.2587594170884,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1335790.463307046,
+   "Test 2 (Reduced, Default, No Noise)": -1326673.617362698,
+   "Test 3 (Full, Modified, Noise)": -2177.0063682542104,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -104802.77194581449,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1944223.0541674704,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1839870.8537649922
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1482033.6353072529,
+   "Test 2 (Reduced, Default, No Noise)": -1471176.941712625,
+   "Test 3 (Full, Modified, Noise)": -27.46707599595411,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83259.51807826152,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3621442.066795198,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3454810.9977434427
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "SAC",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 106.92431830176022,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1314758.6322513553,
+   "Test 2 (Reduced, Default, No Noise)": -1316736.876233242,
+   "Test 3 (Full, Modified, Noise)": -2836.5254975567545,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108706.08685399531,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861612.3845054067,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1758781.3582468224
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1460459.3562330543,
+   "Test 2 (Reduced, Default, No Noise)": -1465061.0016658956,
+   "Test 3 (Full, Modified, Noise)": -26.282542639053123,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81707.01483919514,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3452257.1758895726,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3292913.7784683476
+  }
+ },
+ {
+  "model": "Model 1 (Full, Default, Noise)",
+  "algo": "SAC",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 146.01729692573525,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320903.961818067,
+   "Test 2 (Reduced, Default, No Noise)": -1312863.0489915733,
+   "Test 3 (Full, Modified, Noise)": -3543.326676047144,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -117546.12390682046,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1826976.2519859117,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1725854.5160078958
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1482646.2147053243,
+   "Test 2 (Reduced, Default, No Noise)": -1471954.0031597523,
+   "Test 3 (Full, Modified, Noise)": -24.101427179939446,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83365.60575733699,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3631295.6968180276,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3472254.974541182
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "PPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 0.7378489159086911,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1142382.2218843005,
+   "Test 2 (Reduced, Default, No Noise)": -1149941.8548123937,
+   "Test 3 (Full, Modified, Noise)": -10523.012797953423,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -85119.32159640576,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1448616.600601617,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1389275.7588894807
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "PPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 0.7380127412974009,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1135690.056797965,
+   "Test 2 (Reduced, Default, No Noise)": -1150041.2052021166,
+   "Test 3 (Full, Modified, Noise)": -10506.11581889339,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82073.52972628931,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1435758.2275526994,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1380140.0304769496
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "PPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 0.7382270082229421,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1157610.2699275452,
+   "Test 2 (Reduced, Default, No Noise)": -1150053.71777797,
+   "Test 3 (Full, Modified, Noise)": -10528.857404086091,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -87554.08804085961,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1462216.2301415217,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1403274.575538828
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "PPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 0.7384518673420504,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1151168.6124892938,
+   "Test 2 (Reduced, Default, No Noise)": -1151772.1244489495,
+   "Test 3 (Full, Modified, Noise)": -10526.59691504298,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -85724.97666591956,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1460635.6557404387,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1400285.914288116
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "PPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.7368713492473771,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1158205.810888238,
+   "Test 2 (Reduced, Default, No Noise)": -1150651.097760447,
+   "Test 3 (Full, Modified, Noise)": -10505.72536942797,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -88268.61190652993,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1464190.6751154093,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1405064.4577832203
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 0.7383901402446791,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1143349.598293294,
+   "Test 2 (Reduced, Default, No Noise)": -1150933.6336079543,
+   "Test 3 (Full, Modified, Noise)": -10544.783042467494,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -87406.88718639992,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1450376.8818344914,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1396115.431886122
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 0.7380127412974009,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1135702.8264319433,
+   "Test 2 (Reduced, Default, No Noise)": -1150030.3978743665,
+   "Test 3 (Full, Modified, Noise)": -10506.11581889339,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -86123.15655256428,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1436067.830158025,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1386902.297585056
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 0.7375871494203913,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1157704.2588434513,
+   "Test 2 (Reduced, Default, No Noise)": -1150150.8282461215,
+   "Test 3 (Full, Modified, Noise)": -10503.184186955426,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -92806.01437589881,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1461855.0216082013,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1408681.5403002265
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 0.7403418339176918,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1151280.3606360971,
+   "Test 2 (Reduced, Default, No Noise)": -1151888.850590086,
+   "Test 3 (Full, Modified, Noise)": -10603.216559342458,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -91087.65070335942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1459862.346932574,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1402485.0600367466
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TRPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.7379537038169179,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1158632.4830736646,
+   "Test 2 (Reduced, Default, No Noise)": -1151082.44127031,
+   "Test 3 (Full, Modified, Noise)": -10549.118159273004,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -90543.09853298304,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1463470.8637933007,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1407071.4039361684
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TD3",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 0.676133003125554,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1184721.144940009,
+   "Test 2 (Reduced, Default, No Noise)": -1192789.7162440922,
+   "Test 3 (Full, Modified, Noise)": -8324.520007806419,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82029.33681154097,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1510200.2417453337,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1451587.2203394636
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TD3",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 0.5806475449658373,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1169072.5152179704,
+   "Test 2 (Reduced, Default, No Noise)": -1183805.9394484784,
+   "Test 3 (Full, Modified, Noise)": -5158.202938511031,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -84158.05712742929,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1703631.235363089,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1620164.9842148037
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TD3",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 0.6999295948550424,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1178233.502813252,
+   "Test 2 (Reduced, Default, No Noise)": -1170657.7062949636,
+   "Test 3 (Full, Modified, Noise)": -11005.87240722252,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -92564.37726889671,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1482636.4647665138,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1425184.2139994944
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TD3",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 0.726906137640509,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1170196.463737556,
+   "Test 2 (Reduced, Default, No Noise)": -1170834.959630548,
+   "Test 3 (Full, Modified, Noise)": -9015.9785688432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -89926.19098764425,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1485937.333680825,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1421159.2904317325
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "TD3",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.6854853181756797,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1164378.2675960162,
+   "Test 2 (Reduced, Default, No Noise)": -1156756.358409274,
+   "Test 3 (Full, Modified, Noise)": -10446.604191178356,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -89147.66411421308,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1489723.1384619912,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1436457.8274885342
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "SAC",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 0.7326022708376606,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1163788.5855383659,
+   "Test 2 (Reduced, Default, No Noise)": -1171510.4285102433,
+   "Test 3 (Full, Modified, Noise)": -10082.498844680606,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83268.95645840623,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1484307.5397073438,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1422906.2552624228
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "SAC",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 0.7827138052946924,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1175270.7282723002,
+   "Test 2 (Reduced, Default, No Noise)": -1190058.5572120661,
+   "Test 3 (Full, Modified, Noise)": -9955.096635397038,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82400.27775220759,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1499915.7041476863,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1440652.3792623007
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "SAC",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 0.3616505185277585,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1196553.4831719873,
+   "Test 2 (Reduced, Default, No Noise)": -1188702.0999327889,
+   "Test 3 (Full, Modified, Noise)": -5173.555690203191,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -87415.6007693191,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1512898.1544259698,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1450951.7372388458
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "SAC",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 0.5899283856578904,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1172492.4976117895,
+   "Test 2 (Reduced, Default, No Noise)": -1173164.1184464598,
+   "Test 3 (Full, Modified, Noise)": -6004.337594217489,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -88073.67032057904,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1499758.2601979033,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1433333.2697007912
+  }
+ },
+ {
+  "model": "Model 2 (Reduced, Default, Noise)",
+  "algo": "SAC",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.6791797638329617,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1194716.8001424433,
+   "Test 2 (Reduced, Default, No Noise)": -1186919.4898749953,
+   "Test 3 (Full, Modified, Noise)": -10241.281636680753,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -90071.57219721048,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1525342.1935136185,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1464780.7269025864
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "PPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 17.63272440426445,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1472142.2820605796,
+   "Test 2 (Reduced, Default, No Noise)": -1484977.8239333008,
+   "Test 3 (Full, Modified, Noise)": -148.05238101728406,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79167.96042228324,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2954136.4553909386,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2840864.7191595286
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "PPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 2.2359706403347896,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1434914.972438867,
+   "Test 2 (Reduced, Default, No Noise)": -1450178.2116011987,
+   "Test 3 (Full, Modified, Noise)": -850.5851223418779,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -76571.31300706138,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2072429.776926633,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2003608.7349027488
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "PPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 3.183167101451932,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1475477.6735180293,
+   "Test 2 (Reduced, Default, No Noise)": -1464750.7406894863,
+   "Test 3 (Full, Modified, Noise)": -658.8717198758343,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82391.1781882262,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2916151.086857272,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2807170.6466413587
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "PPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 8.179700461836129,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1472140.2005095158,
+   "Test 2 (Reduced, Default, No Noise)": -1477034.3959858753,
+   "Test 3 (Full, Modified, Noise)": -299.9239221169234,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81030.65699459598,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2761691.933865144,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2655039.269580121
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "PPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 7.622072759132619,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1486099.3945497426,
+   "Test 2 (Reduced, Default, No Noise)": -1475679.5097428854,
+   "Test 3 (Full, Modified, Noise)": -320.6140122985087,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82633.66746489136,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -4305288.263611784,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -4126987.598035003
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TRPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 1.2162934152634313,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1458352.3079448815,
+   "Test 2 (Reduced, Default, No Noise)": -1470819.8466953107,
+   "Test 3 (Full, Modified, Noise)": -1244.6994580644525,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79024.69835862299,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2840984.0326245097,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2731669.6595669677
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TRPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 1.9902861324355041,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1442263.7542045151,
+   "Test 2 (Reduced, Default, No Noise)": -1457854.4066198412,
+   "Test 3 (Full, Modified, Noise)": -920.4699353509972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -76581.11338683733,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -377953413.2414463,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196923204.79861757
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TRPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 1.7775286085530695,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1446121.0690626102,
+   "Test 2 (Reduced, Default, No Noise)": -1435770.9920394127,
+   "Test 3 (Full, Modified, Noise)": -992.310392114178,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82449.91939771811,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2245843.849502278,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2157527.0932308254
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TRPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 0.482185163779759,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1402626.6036277707,
+   "Test 2 (Reduced, Default, No Noise)": -1405951.477750566,
+   "Test 3 (Full, Modified, Noise)": -1857.5356397114297,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -80973.37619499302,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2121887.531082045,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2035349.8925093592
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TRPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.324159756240656,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1418141.2292908183,
+   "Test 2 (Reduced, Default, No Noise)": -1408722.167513513,
+   "Test 3 (Full, Modified, Noise)": -3771.8245839628617,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82944.85886697893,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2267881.971922284,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2182246.8614025167
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TD3",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 3.259915554749171,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1341799.9501540035,
+   "Test 2 (Reduced, Default, No Noise)": -1352092.3157957694,
+   "Test 3 (Full, Modified, Noise)": -632.8851501161388,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79147.72410228141,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3135342.2237447957,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2978441.758753351
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TD3",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 1.7486779045676806,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1422405.0736246402,
+   "Test 2 (Reduced, Default, No Noise)": -1437635.944931785,
+   "Test 3 (Full, Modified, Noise)": -786.9620017079637,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -76664.76836854448,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -377953413.2414463,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196923204.79861757
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TD3",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 9.526980261349852,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1428388.8109323806,
+   "Test 2 (Reduced, Default, No Noise)": -1418450.1788331477,
+   "Test 3 (Full, Modified, Noise)": -313.7211726647139,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82702.55838343626,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2229172.8720100345,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2132813.7796588363
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TD3",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 2.474639618593154,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1441339.5647754117,
+   "Test 2 (Reduced, Default, No Noise)": -1445772.115347875,
+   "Test 3 (Full, Modified, Noise)": -708.6226718708479,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -80965.0831097121,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -13849427.606291179,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -12732570.691581367
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "TD3",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 96.57299161824656,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1488458.178923759,
+   "Test 2 (Reduced, Default, No Noise)": -1477709.8672296177,
+   "Test 3 (Full, Modified, Noise)": -33.673359183123054,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83450.37791495546,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -374461625.891092,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -193803191.9296656
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "SAC",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 4.385811349381841,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1434734.6406778037,
+   "Test 2 (Reduced, Default, No Noise)": -1446636.1458806142,
+   "Test 3 (Full, Modified, Noise)": -500.58145754751376,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79250.5730288321,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2165869.2936679213,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2082631.5165720484
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "SAC",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 5.081416762364417,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1402507.2291683787,
+   "Test 2 (Reduced, Default, No Noise)": -1418773.74978323,
+   "Test 3 (Full, Modified, Noise)": -355.6909763553241,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77292.68579007337,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2270196.2690676814,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2170478.681845088
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "SAC",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 2.0228428025497043,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1446018.2618465777,
+   "Test 2 (Reduced, Default, No Noise)": -1435736.4421247775,
+   "Test 3 (Full, Modified, Noise)": -1092.52673986995,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82801.33675230031,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2653235.2929419177,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2533482.018938548
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "SAC",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 6.06049062663846,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1432977.0200329279,
+   "Test 2 (Reduced, Default, No Noise)": -1437450.1407121369,
+   "Test 3 (Full, Modified, Noise)": -348.7304977116096,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81533.32318887461,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3418083.0240605758,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3235363.741235803
+  }
+ },
+ {
+  "model": "Model 3 (Reduced, Modified, Noise)",
+  "algo": "SAC",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 26.862321574918276,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1473670.936970496,
+   "Test 2 (Reduced, Default, No Noise)": -1463251.5119947554,
+   "Test 3 (Full, Modified, Noise)": -117.92306626346547,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83311.80645765175,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2646854.610928703,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2531612.858170946
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "PPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 3.672217454879855,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1454630.5909812797,
+   "Test 2 (Reduced, Default, No Noise)": -1467010.11828831,
+   "Test 3 (Full, Modified, Noise)": -590.4303983131164,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -78948.85383324453,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3004301.1732479637,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2888582.5989571894
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "PPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 4.21220984173344,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1452637.0973360937,
+   "Test 2 (Reduced, Default, No Noise)": -1468438.4357483457,
+   "Test 3 (Full, Modified, Noise)": -528.0809036054649,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -76569.94646847193,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2874597.7262805523,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2771461.007740713
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "PPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 3.694342692140212,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1477618.1496680942,
+   "Test 2 (Reduced, Default, No Noise)": -1466774.4828809116,
+   "Test 3 (Full, Modified, Noise)": -587.1259691535364,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82401.81170479183,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3092854.3977819663,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2975362.0670263343
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "PPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 3.360695464430162,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1461154.8000717037,
+   "Test 2 (Reduced, Default, No Noise)": -1465819.960495817,
+   "Test 3 (Full, Modified, Noise)": -631.3698786879637,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -80930.4657049788,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3386438.0001619877,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3247367.348383049
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "PPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 3.9229235916412297,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1477662.088494792,
+   "Test 2 (Reduced, Default, No Noise)": -1467369.6323467155,
+   "Test 3 (Full, Modified, Noise)": -561.5275740474345,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82536.56199806907,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3409303.2654977017,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3274806.74275208
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TRPO",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 3.518479711638777,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1309200.2717341308,
+   "Test 2 (Reduced, Default, No Noise)": -1318664.4150492165,
+   "Test 3 (Full, Modified, Noise)": -2758.6192128902076,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106271.83694310291,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1861101.9857503392,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1760242.8784152213
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1451537.1855694004,
+   "Test 2 (Reduced, Default, No Noise)": -1463341.7677166783,
+   "Test 3 (Full, Modified, Noise)": -610.5193314876482,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -78946.8479646732,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -4278557.875239615,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -4102637.0480926437
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TRPO",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 3.0456471788408543,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1302735.987255938,
+   "Test 2 (Reduced, Default, No Noise)": -1318593.9080111242,
+   "Test 3 (Full, Modified, Noise)": -2752.468483003892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -103467.2977744445,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1845413.9187520358,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1749304.9443180163
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1451409.4706542394,
+   "Test 2 (Reduced, Default, No Noise)": -1467298.3820718687,
+   "Test 3 (Full, Modified, Noise)": -680.3530711722914,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -76564.976614031,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3242108.9445610577,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3121825.2541318936
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TRPO",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 1.474914347732467,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327433.4440589324,
+   "Test 2 (Reduced, Default, No Noise)": -1318756.403471068,
+   "Test 3 (Full, Modified, Noise)": -2756.1705026616432,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109863.90348315335,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877732.4471083302,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1777157.680103077
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1456362.6501565701,
+   "Test 2 (Reduced, Default, No Noise)": -1446030.7650249875,
+   "Test 3 (Full, Modified, Noise)": -1113.6427833095981,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82397.20638829899,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2239052.3235675944,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2154786.712200746
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TRPO",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 3.241071082636662,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1316916.4367796849,
+   "Test 2 (Reduced, Default, No Noise)": -1318916.1574355592,
+   "Test 3 (Full, Modified, Noise)": -2753.211766372425,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -108308.89141938477,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1873422.705471923,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1769409.8130907442
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1452189.388953282,
+   "Test 2 (Reduced, Default, No Noise)": -1456674.6173904235,
+   "Test 3 (Full, Modified, Noise)": -649.1784062861688,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -80928.18554044105,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2763398.5286788424,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2648110.7509001214
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TRPO",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 0.4835132488135773,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1327091.898042155,
+   "Test 2 (Reduced, Default, No Noise)": -1318635.201462363,
+   "Test 3 (Full, Modified, Noise)": -2764.357341635183,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -109832.24409871444,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1877419.8693227638,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1775685.776613097
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1476294.7526374785,
+   "Test 2 (Reduced, Default, No Noise)": -1466041.276571407,
+   "Test 3 (Full, Modified, Noise)": -1863.385678453459,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82536.29929598783,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2332821.3305560695,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2248855.7643974507
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TD3",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 36.98061573343674,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1477803.118817861,
+   "Test 2 (Reduced, Default, No Noise)": -1490538.5289525222,
+   "Test 3 (Full, Modified, Noise)": -70.9845599732079,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79313.81356184492,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -8313654.973130314,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -7834371.694246185
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TD3",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 339.2761571063352,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1485949.7913455344,
+   "Test 2 (Reduced, Default, No Noise)": -1502488.85717876,
+   "Test 3 (Full, Modified, Noise)": -6.35691047008348,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77286.92043177882,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -377953401.0228778,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196923192.03568155
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TD3",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 14.877780915031725,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1469637.9212641346,
+   "Test 2 (Reduced, Default, No Noise)": -1458890.3754239925,
+   "Test 3 (Full, Modified, Noise)": -207.99736498961343,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82766.93056185702,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -378210133.5644766,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -196957731.38287506
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TD3",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 15.799912018186438,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1480338.3547315367,
+   "Test 2 (Reduced, Default, No Noise)": -1485214.3101609454,
+   "Test 3 (Full, Modified, Noise)": -146.5607919642892,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81217.35363585537,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -13469752.565179732,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -12370420.24132485
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "TD3",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 15.118178462235575,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1485984.1217253327,
+   "Test 2 (Reduced, Default, No Noise)": -1475248.9236566296,
+   "Test 3 (Full, Modified, Noise)": -203.84501890403817,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82984.49588964056,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -11420952.00453014,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -10581364.950258804
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "SAC",
+  "seed": 42,
+  "max_rel_diff_untrained_vs_trained": 14.304772462799123,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313921.3994518039,
+   "Test 2 (Reduced, Default, No Noise)": -1323468.8586673466,
+   "Test 3 (Full, Modified, Noise)": -2696.037295349504,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106532.08653349942,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1881941.1984156915,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1778535.2660141434
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1444470.7369619315,
+   "Test 2 (Reduced, Default, No Noise)": -1456680.8029672087,
+   "Test 3 (Full, Modified, Noise)": -176.15664015278145,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -79387.47178037389,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2996289.6728878533,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2856270.7168216715
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "SAC",
+  "seed": 123,
+  "max_rel_diff_untrained_vs_trained": 15.591582120793142,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1313781.4676789625,
+   "Test 2 (Reduced, Default, No Noise)": -1329767.6249873913,
+   "Test 3 (Full, Modified, Noise)": -2163.1050658290333,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -97648.54320317772,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1913676.5623581945,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1815516.8657760588
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1441234.5245785487,
+   "Test 2 (Reduced, Default, No Noise)": -1457355.8372818013,
+   "Test 3 (Full, Modified, Noise)": -130.37364671318207,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -77050.18328388035,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3580206.98104166,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3409889.3504667045
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "SAC",
+  "seed": 456,
+  "max_rel_diff_untrained_vs_trained": 17.779405566330418,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320572.3102462043,
+   "Test 2 (Reduced, Default, No Noise)": -1312253.0463688138,
+   "Test 3 (Full, Modified, Noise)": -3302.536592208972,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -114796.49105868007,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1837579.9355656947,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737498.3693834967
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1465665.9691253824,
+   "Test 2 (Reduced, Default, No Noise)": -1455034.4340203223,
+   "Test 3 (Full, Modified, Noise)": -175.85948503769933,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -82899.3262394866,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2946027.0697082495,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2809052.5860141506
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "SAC",
+  "seed": 789,
+  "max_rel_diff_untrained_vs_trained": 13.213393868246653,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320430.6897021006,
+   "Test 2 (Reduced, Default, No Noise)": -1322555.4050881953,
+   "Test 3 (Full, Modified, Noise)": -2462.2084103157845,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -106523.63724496418,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1911402.0135059352,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1804082.366634644
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1448622.322767283,
+   "Test 2 (Reduced, Default, No Noise)": -1453123.2441472758,
+   "Test 3 (Full, Modified, Noise)": -173.2315612400263,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -81390.80589452673,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -3317469.27108755,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -3147819.7622004165
+  }
+ },
+ {
+  "model": "Model 4 (Reduced, Modified, No Noise)",
+  "algo": "SAC",
+  "seed": 1024,
+  "max_rel_diff_untrained_vs_trained": 15.54856720832849,
+  "untrained": {
+   "Test 1 (Reduced, Default, Noise)": -1320974.0725687784,
+   "Test 2 (Reduced, Default, No Noise)": -1312915.9116647348,
+   "Test 3 (Full, Modified, Noise)": -3285.6103933330714,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -116588.61934415779,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -1841174.1850800836,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -1737852.2957471933
+  },
+  "trained": {
+   "Test 1 (Reduced, Default, Noise)": -1457419.3399607502,
+   "Test 2 (Reduced, Default, No Noise)": -1447152.3951247518,
+   "Test 3 (Full, Modified, Noise)": -198.54349636260375,
+   "Test 4 (Full, Modified, Zero-Lysis Control)": -83043.41586499207,
+   "Test 5 (Reduced, Default, Virus-Free, Noise)": -2787811.7262509884,
+   "Test 6 (Full Coupled, Virus-Free, Noise)": -2659247.615386936
+  }
+ }
+]

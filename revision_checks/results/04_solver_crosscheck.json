@@ -1,0 +1,41 @@
+{
+ "4D Default (Model 2 training; Tests 1-2)": {
+  "ret_rk4_vs_rk45": 2.435913746849781e-07,
+  "ret_rk45_vs_ref": 2.4291963865875056e-07,
+  "ret_rk4_vs_ref": 6.716768530988493e-10,
+  "state_rk4_vs_rk45": 2.7232721813640637e-06,
+  "tumor_rk4_vs_rk45": 2.2253531297006894e-06
+ },
+ "4D Modified (Models 3-4 training)": {
+  "ret_rk4_vs_rk45": 3.340368806948411e-05,
+  "ret_rk45_vs_ref": 1.3019570786303206e-07,
+  "ret_rk4_vs_ref": 3.327348801260427e-05,
+  "state_rk4_vs_rk45": 8.842135701378937e-05,
+  "tumor_rk4_vs_rk45": 8.841661098336422e-05
+ },
+ "6D Default (Model 1 training)": {
+  "ret_rk4_vs_rk45": 0.00014574349573594033,
+  "ret_rk45_vs_ref": 3.7790211059369997e-06,
+  "ret_rk4_vs_ref": 0.00014952306760962378,
+  "state_rk4_vs_rk45": 0.00014583753830831796,
+  "tumor_rk4_vs_rk45": 0.00014583765258873008
+ },
+ "6D Modified (Test 3)": {
+  "ret_rk4_vs_rk45": 9.500462873831146e-05,
+  "ret_rk45_vs_ref": 1.5494931390663563e-06,
+  "ret_rk4_vs_ref": 9.655426908639822e-05,
+  "state_rk4_vs_rk45": 0.00014178266403077746,
+  "tumor_rk4_vs_rk45": 0.0001412644175364683
+ },
+ "6D Modified, zero lysis (Test 4)": {
+  "ret_rk4_vs_rk45": 9.983981799468787e-06,
+  "ret_rk45_vs_ref": 1.3099361719205408e-07,
+  "ret_rk4_vs_ref": 9.852986874438843e-06,
+  "state_rk4_vs_rk45": 2.787646451232064e-05,
+  "tumor_rk4_vs_rk45": 2.787607788195187e-05
+ },
+ "4D Modified, n_sub=20": 0.0019343083513776566,
+ "4D Modified, n_sub=40": 8.584856054606101e-06,
+ "4D Modified, n_sub=80": 2.6129314037666543e-07,
+ "4D Modified, n_sub=160": 1.368530324772138e-08
+}
